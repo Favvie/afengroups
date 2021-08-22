@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.footer {
+	background: #0b0726;
+	padding: 53px;
+	font-family: "Manrope", sans-serif;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.newsletter h4 {
+	font-size: 20px;
+	line-height: 27px;
+	padding-bottom: 1em;
+}
+
+.newsletter p {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.newsletter,
+.company,
+.quick-link,
+.go-to-link {
+	color: white;
+}
+
+.quicklinks,
+.go-to {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.input-group {
+	margin: 1em 0;
+	/* border-radius: 0px 10px 10px 0px; */
+	
+}
+
+.email-input{
+    padding: .6rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    width: 350px;
+}
+
+.company {
+	width: 30%;
+}
+
+.signUp-btn {
+    padding: .6rem;
+	border-radius: 0px 10px 10px 0px;
+	background: #ffc30b;
+    border: none;
+}
+
+.company img {
+    width: 20%;
+}

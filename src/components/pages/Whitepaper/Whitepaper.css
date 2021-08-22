@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.whitepaper-section {
+    background-image: url("../../../img/whitepaper-bg.png");
+
+	height: 75vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.whitepaper-heading {
+    vertical-align: baseline;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.whitepaper-p {
+    padding: 40px 148px;
+    
+font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+
+color: #16222E;
+
+}
+
+.continue-reading {
+    color: #BF8B4B;
+
+}
+
+
+* {
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+nav {
+    display: flex;
+    position: relative;
+}
+
+nav .sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-right: 2px ;
+    background: #ffffff;
+    overflow-y: scroll;
+
+}
+
+nav .sidebar header h1 {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1.4em;
+    
+}
+
+.token{
+    width: 100%;
+}
+
+nav .sidebar ul li #intro {
+    border-top: 1px solid rgba(68, 62, 62,0.5);
+}
+nav .sidebar ul li {   
+    list-style: none;
+    border-bottom: 1px solid rgba(68, 62, 62,0.5);
+    /*border-top: 1px solid rgba(68, 62, 62, 0.5);*/
+    margin: 0;
+}
+
+nav .sidebar ul li .nav-link{
+    display: block;
+    color: #636567;
+    padding: 1em 0em 1em 1.2em;
+    font-size: 1em;
+    margin: 0;
+}
+
+
+#main-doc .main-section {
+ margin-top: 1em;
+ margin-left: 22%;
+ margin-right: 3em;
+ color: #515355;
+
+}
+
+
+#main-doc .main-section h2 {
+    padding: .5em;
+    font-weight: 300;
+    font-size: 2em;
+    color: black;
+}
+
+#main-doc .main-section p {
+    padding: 0 1.3em 1.3em 1.3em;
+}
+
+#main-doc .main-section ul li{
+    margin-left: 5em;
+    padding-bottom: 1.3em;
+
+}
+
+code {
+    display: block;
+    background: #f7f7f7;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    margin-right: 2.5em;
+    padding: 1.2em;
+    font-family: monospace;
+    line-height: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .sidebar {
+        position: relative;
+        width: 100%;
+        overflow-y: unset;
+    }    
+
+    nav .sidebar header h1 {
+        text-align: center;
+    }
+
+    nav .sidebar ul {
+        border: 1px solid black;
+        overflow-y: scroll;
+        height: 17em;
+    }
+
+    #main-doc .main-section {
+        text-align: left;
+        margin-left: 1em;
+        margin-right: 1em;
+        
+    }
+
+    #main-doc .main-section ul li{
+        margin-left: 2em;
+        
+    }
+        
+}
+

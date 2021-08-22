@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+.container {
+	/* background: black url(../../../img/backgroundImage.jpg) no-repeat cover; */
+	/* height: 100vh; */
+
+	background-image: url("../../../img/backgroundImage.jpg");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.hero-section {
+	width: 45%;
+	padding: 80px;
+	padding-top: 5%;
+}
+
+.company-name {
+	color: #ffe260;
+	padding: 11px 0;
+	opacity: 0.7;
+}
+
+.hero-heading {
+	color: #fff;
+	opacity: 0.7;
+	padding-bottom: 1rem;
+	font-size: 36px;
+}
+.hero-p {
+	color: #fff;
+	opacity: 0.7;
+	padding-bottom: 2rem;
+	line-height: 160%;
+	font-size: 18px;
+}
+
+.learn-more {
+	font-family: "Ubuntu", sans-serif;
+	padding: 10px 35px;
+	border: 2px solid #ffe260;
+	border-radius: 3px;
+	color: #ffe260;
+	/* margin-top: 100px; */
+}
+.features-section {
+	/* background-color: #fff; */
+	text-align: center;
+}
+.afen_token {
+	color: #595959;
+	font-size: 28px;
+	padding: 54px 0 12px 0;
+}
+
+.purchase {
+	color: #bf8b4b;
+	font-size: 28px;
+	opacity: 0.7;
+}
+.sponsors {
+	display: flex;
+	justify-content: center;
+	margin: 0 1em;
+	padding: 66px 0;
+}
+
+.active {
+	background: #bf8b4b;
+	/* border: 1px solid black; */
+	padding: 20px 10px;
+	color: white;
+	border-radius: 14px;
+	margin-right: 48px;
+	width: 280px;
+	/* height: 72px; */
+	vertical-align: baseline;
+}
+
+.sponsor {
+	/* border: 2px solid black; */
+	background: rgb(166, 166, 166, 36%);
+	padding: 20px 10px;
+	margin-right: 48px;
+	border-radius: 14px;
+	width: 280px;
+	color: #595959;
+}
+
+.features-title {
+	color: #bf8b4b;
+	font-size: 36px;
+}
+
+.features-p {
+	font-size: 22px;
+	line-height: 28px;
+	color: #595959;
+	padding-bottom: 2rem;
+}
+
+.buy-now {
+	border: 1px solid #d2b12a;
+	color: #bf8b4b;
+	font-size: 16px;
+	padding: 10px 35px;
+}
+
+.features-price {
+	display: flex;
+	justify-content: space-between;
+	/* margin: 0 80px; */
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 127px;
+	margin-bottom: 100px;
+}
+
+.features-text {
+	width: 45%;
+	text-align: left;
+}
+.price-graph {
+	position: relative;
+	width: 317px;
+	height: 338px;
+	background: rgba(22, 34, 46, 1);
+
+	border-radius: 14px;
+	margin-right: 100px;
+	/* overflow: hidden; */
+}
+
+
+
+.price-graph-top {
+	/* position: absolute; */
+	content: "Powered by CoinGecko";
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 12%;
+	background: #bf8b4b;
+	border-radius: 14px 14px 0 0;
+	padding-top: 10px;
+	color: white;
+}
+
+.price-graph-middle {
+	position: relative;
+}
+
+.priceName h4{
+color: #A6A6A6;
+font-size: 22px;
+}
+.priceName p {
+	color: #D2B12A;
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 100px;
+
+}
+
+.price h4 {
+	color: #A6A6A6;
+	font-size: 12px;	
+}
+
+.price{
+	padding-top: 1rem;
+}
+.price p {
+	color: #FFE260;
+	font-size: 24px;
+	font-weight: 500;
+
+}
+.pricelogo {
+	display: flex;
+	padding:30px 50px 0 50px;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.pricelogo img{
+	width: 20%;
+	height: 20%;
+}
+.price-graph:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 7%;
+	bottom: 0;
+	left: 0;
+	background: #bf8b4b;
+	border-radius: 0 0 14px 14px;
+}
+
+.feature-list {
+	display: flex;
+	flex-grow: 1;
+}
+.feature {
+	border-top: 3px solid #d2b12a;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.afro-img {
+	margin-bottom: -120px;
+}
+
+.nft-afro-section {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 5rem;
+}
+
+.afro-text {
+	width: 45%;
+	text-align: left;
+	margin-top: 100px;
+}
+.afro-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 41px;
+	color: #bf8b4b;
+}
+
+.afro-p {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: #595959;
+	margin-bottom: 2rem;
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.background-img{
+    background-color: #9B9B9B;
+}
+
+.blog-hero-section {
+    background-color: rgba(21, 15, 64, 0.6);
+    text-align: center;
+    
+}
+
+.blog-section {
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 180px;
+}
+
+.blog-post {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.blog-post img{
+    width: 484px;
+}
+
+.blog-post h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+
+
+}
+.blog-title {
+font-weight: bold;
+font-size: 24px;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+color: #FFE260;
+padding: 1rem 0;
+
+}
+
+.blog-content {
+    
+font-weight: bold;
+font-size: 24px;
+letter-spacing: -0.04em;
+padding-left: 24px;
+color: #FFFFFF;
+
+}
+
+.blog-content-2 {
+    font-weight: bold;
+font-size: 24px;
+letter-spacing: -0.04em;
+padding-right: 24px;
+color: #FFFFFF;
+text-align: right;
+}
+
+.blog-content p{
+    opacity: .7;
+    
+}
+
+.link {
+    color: #FFE260;
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 21px; */
+    padding: .5em;
+}

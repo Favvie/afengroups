@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.contact-heading {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 100%;
+	text-align: center;
+	letter-spacing: 0.38em;
+	text-transform: uppercase;
+	color: #150f40;
+    padding: 76px 0;
+}
+
+.form-container {
+	background: rgba(166, 166, 166, 0.1);
+	/* opacity: 0.1; */
+	border-radius: 9px;
+	width: 509px;
+	margin: auto;
+    padding:0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub-heading {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 41px;
+	color: #595959;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+    padding: 48px 0;
+}
+
+#name,
+#email,
+#message {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 1em ;
+    border: 0.7px solid #A6A6A6;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    padding: 1em;
+    background: #FFC30B;
+    border: none;
+    border-radius: 9px;
+    font-family: Manrope;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    /* display: block; */
+    width: 107px;
+    color: #494343;
+margin-bottom: 48px;
+}
+
+.socials-heading {
+    font-family: Manrope;
+font-weight: 500;
+font-size: 18px;
+color: #595959;
+padding: 26px;
+}
+
+.our-socials {
+    background: rgba(166, 166, 166, 0.1);
+	border-radius: 9px;
+	width: 509px;
+	margin: auto;
+    margin-top: 24px;
+    padding:0 48px;
+    /* display: flex;
+    /* flex-direction: column; */
+    /* /* justify-content: center; */
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 36px;
+}
+
+.social {
+    padding-right: 20px;
+    font-size: 25px;
+    color: #FFC30B;
+    
+}

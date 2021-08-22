@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.team-hero-section {
+    margin-bottom: 20px;
+}
+.team-heading {
+font-weight: bold;
+font-size: 50px;
+letter-spacing: 0.38em;
+text-transform: uppercase;
+text-align: center;
+color: #150F40;
+}
+
+.team-member{
+    display: flex;
+    max-width: 1350px;
+    align-items: center;
+}
+
+
+.member-img{
+    position: relative;
+    width: 95%;
+    height: 192px;
+    background-color: #0B0726;
+    margin-top: 50px;
+    /* top: 50%; */
+}
+
+.member-img:after{
+    position: absolute;
+    content: '';
+    /* background-image: url(../../../img/deborah.png) no-repeat cover; */
+    background-image: url("../../../img/deborah.png");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.member-pic {
+    position: absolute;
+    right: -50px;
+    top: -20px;
+}
+
+.data {
+margin-left: 55px;
+margin-top: 2em ;
+}
+
+.name {
+position: relative;
+font-weight: bold;
+font-size: 24px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #150F40;
+padding: .5rem 0;
+}
+
+.name:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    background: #FFE260;
+    left: 0;
+    bottom: 0;
+
+}
+
+.role {
+    padding: 9px 0;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: -0.045em;
+color: #150F40;
+}
+
+.about {
+
+font-weight: normal;
+font-size: 18px;
+letter-spacing: -0.045em;
+
+color: #0B0726;
+
+}
+
+
+.team-member-2{
+    display: flex;
+    max-width: 1350px;
+    margin-left: auto;
+    align-items: center;
+}
+
+
+.member-img-2{
+    position: relative;
+    /* float: right; */
+    width: 95%;
+    height: 192px;
+    background-color: #0B0726;
+    margin-top: 50px;
+    /* top: 50%; */
+}
+
+.member-img-2:after{
+    position: absolute;
+    content: '';
+    /* background-image: url(../../../img/deborah.png) no-repeat cover; */
+    background-image: url("../../../img/deborah.png");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.member-pic-2 {
+    position: absolute;
+    left: -50px;
+    top: -20px;
+}
+
+.data-2 {
+margin-right: 55px;
+text-align: right;
+margin-top: 2em ;
+}
+
+.name-2 {
+position: relative;
+font-weight: bold;
+font-size: 24px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #150F40;
+padding: .5rem 0;
+}
+
+.name-2:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    background: #FFE260;
+    right : 0;
+    bottom: 0;
+
+}
+
+.role-2 {
+    padding: 9px 0;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: -0.045em;
+color: #150F40;
+}
+
+.about-2 {
+
+font-weight: normal;
+font-size: 18px;
+letter-spacing: -0.045em;
+
+color: #0B0726;
+
+}

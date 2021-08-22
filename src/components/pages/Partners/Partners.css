@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.partners {
+	background-image: url("../../../img/partnersImage.jpg");
+	height: 70vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.partner-heading {
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	color: #bf8b4b;
+	padding-top: 71px;
+}
+.partner h1 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 12px;
+
+	/* Primary */
+
+	color: #150f40;
+}
+.partners-cards {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 131px;
+	row-gap: 11px;
+	margin: 20px 93px;
+	text-align: center;
+}
+
+.partner p {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	color: #150f40;
+	text-align: left;
+}
+.partner {
+	padding: 30px;
+	border-bottom: 2px solid #ffe260;
+	/* filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.12)); */
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.partner:hover {
+	border: 1px solid #ffe260;
+	border-radius: 2px;
+}
+
+.learnMore {
+	position: relative;
+	bottom: 0;
+	text-align: left;
+}
+
+.load-more {
+	width: 448px;
+	padding: 10px 35px;
+	border: none;
+	border-radius: 3px;
+	color: #ffe260;
+	background: #0b0726;
+	margin: 0 550px;
+	margin-top: 50px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+margin-bottom: 20px;
+	text-align: center;
+
+	color: #ffe260;
+}
