@@ -1,3 +1,4 @@
+/*
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 * {
@@ -6,20 +7,25 @@
 	padding: 0;
 }
 
-.service {
+.services {
 	background-image: url("../../../img/afen-art-bg.jpg");
 
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    position: relative;
+	position: relative;
+    display: flex;
 }
-
+/*
 .right-col {
-	float: right;
-    padding-right: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-right: 10%;
+	padding-top: 10%;
 }
+/*
 
 .right-col h1 {
 	color: #ffe260;
@@ -55,13 +61,11 @@
 }
 
 .button-group {
-    position: absolute;
-    bottom: 50px;
-    right:150px;
+    right: 0;
+
 }
 .btn {
     width: 74px;
-    /* background-color: red; */
     padding: 5px;
     border: none;
     font-size: 1.5em;
@@ -75,9 +79,7 @@
     margin-right: 5px;
 }
 .nav-right {
-    border-radius: 0 9px 9px 0;
-    /* margin-right: 5px; */
-    
+    border-radius: 0 9px 9px 0;   
 }
 
 .services {
@@ -87,11 +89,12 @@
 .headings{
     position: absolute;
     transform: rotate(-90deg);
-    top: 100px;
+    top: 250px;
     left: 0;
     padding: 0;
     margin-left: -100px;
-    /* text-align: left; */
+   
+
 }
 .service-heading {
     font-weight: 500;
@@ -100,13 +103,31 @@
     letter-spacing: -0.03em;
     color: #FFE260;
     opacity: 0.3;
-    
     padding-right: 2em;
-    /* transform-origin: top right; */
-    /* transition: transform .3s ease-in-out; */
+    
 }
 
 .actives {
     font-size: 46px;
-    padding-top: 100px;
+   
 }
+
+.right-col-1{
+    background-image: url("../../../img/afen-real.jpg");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+}
+
+.right-col-2{
+    background-image: url("../../../img/backgroundImage.jpg");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+} */

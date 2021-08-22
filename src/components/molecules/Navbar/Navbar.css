@@ -6,7 +6,7 @@
 	padding: 0;
 }
 .logo {
-	width: 7%;
+	width: 6%;
     display: block;
 }
 .nav-links {
@@ -29,8 +29,9 @@
 	justify-content: space-between;
 	/* max-width: 1300px; */
 	/* margin: auto; */
-	padding: 20px 80px;
+	padding: 0 80px;
 	align-items: center;
+	background: #16222E;
 
 }
 

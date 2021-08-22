@@ -22,7 +22,7 @@ const Homepage = () => {
 	return (
 		<div className="home-container">
 			<div className="container">
-				<Navbar />
+				<Navbar backgroundColor={'transparent'} />
 
 				<div className="hero-section">
 					<h4 className="company-name">AFEN GROUP</h4>
@@ -50,7 +50,7 @@ const Homepage = () => {
 					Purchase $AFEN token from any of these outlets
 				</h4>
 				<ul className="sponsors">
-					<li className="active">Bitmart</li>
+					<li className="sponsor">Bitmart</li>
 					<li className="sponsor">Julswap</li>
 					<li className="sponsor">CoinGecko</li>
 					<li className="sponsor">Pancake Swap</li>

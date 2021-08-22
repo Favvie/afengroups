@@ -3,18 +3,21 @@ import "./Navbar.css";
 import afenLogo from "../../../img/afenLogo.png";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({backgroundColor}) => {
 	const decor = {
 		textDecoration: "none",
 	};
 
 	return (
-		<div className="nav-container">
+		<div className="nav-container" style={{backgroundColor}}>
 			<img className="logo" src={afenLogo} alt="" />
 
 			<ul className='nav-links'>
 				<Link style={decor} to="/">
 					<li className='nav-link'>Home</li>
+				</Link>
+				<Link style={decor} to="/about">
+					<li className='nav-link'>About</li>
 				</Link>
 				<Link style={decor} to="/services">
 					<li className='nav-link'>Services</li>

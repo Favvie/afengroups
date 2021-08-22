@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.about-heading {
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 0.38em;
+	text-transform: uppercase;
+	color: #150f40;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.about-p {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	color: #595959;
+	opacity: 0.7;
+	width: 883px;
+	margin: auto;
+}
+.roadmap-section {
+	background: #0b0726;
+	height: 170vh;
+	margin-top: 15em;
+	padding: 10% 0;
+	position: relative;
+}
+
+.roadmap {
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 220px;
+	line-height: 264px;
+	letter-spacing: 0.005em;
+	text-transform: uppercase;
+	color: rgba(255, 226, 96, 0.08);
+	position: absolute;
+	padding-left: 150px;
+}
+
+.tokenomics {
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 220px;
+	line-height: 264px;
+	letter-spacing: 0.005em;
+	text-transform: uppercase;
+	color: rgba(255, 226, 96, 0.08);
+	position: absolute;
+	padding-top: 10%;
+	/* width: 100%; */
+	/* display: none; */
+	/* margin:0 20px; */
+}
+
+.tokenomics-img {
+	padding-top: 10%;
+	display: flex;
+	/* margin-top: 100px; */
+	max-width: 1300px;
+	margin: auto;
+	justify-content: center;
+}
+
+.piechart-img {
+	margin-right: 100px;
+	/* margin-top: -50px; */
+}
+.roadmap-img {
+	z-index: 2;
+	width: 80%;
+	margin: auto;
+	position: relative;
+	/* margin-top: -100px; */
+}
+
+.timeline1 {
+	position: absolute;
+	top: 80px;
+	left: 150px;
+}
+
+.timeline2 {
+	position: absolute;
+	top: 60px;
+	left: 450px;
+}
+
+.timeline3 {
+	position: absolute;
+	top: 130px;
+	left: 760px;
+}
+
+.timeline4 {
+	position: absolute;
+	top: 510px;
+	left: 270px;
+	/* bottom: 100PX; */
+}
+
+.timeline5 {
+	position: absolute;
+	top: 580px;
+	left: 580px;
+	/* bottom: 100PX; */
+}
+
+.timeline6 {
+	position: absolute;
+	top: 590px;
+	left: 950px;
+}
+
+.timeline1 h1,
+.timeline2 h1,
+.timeline3 h1,
+.timeline4 h1,
+.timeline5 h1,
+.timeline6 h1 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.005em;
+	color: white;
+	padding-bottom: 0.5em;
+}
+
+.timeline1 p,
+.timeline2 p,
+.timeline3 p,
+.timeline4 p,
+.timeline5 p,
+.timeline6 p {
+	font-size: 13px;
+	line-height: 15px;
+	padding-bottom: 0.5em;
+	color: #ffffff;
+}

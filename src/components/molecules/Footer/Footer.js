@@ -2,6 +2,9 @@ import React from "react";
 import "./Footer.css";
 import afenLogo from "../../../img/afenLogo.png";
 import { Link } from "react-router-dom";
+import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import { GrReddit } from "react-icons/gr";
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
     const decor = {
@@ -43,7 +46,23 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-
+                <div>
+                    <ul className='afen'>
+                        <li>&copy; Afen, Inc. All rights reserved. </li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+                
+                <div className="socials">
+                    <Link to='/' className='twitter social'><FaTwitter/></Link>
+                    <Link to='/' className='telegram social'><FaTelegramPlane /></Link>
+                    <Link to='/' className='instagram social'><AiFillInstagram/></Link>
+                    <Link to='/' className='linkedin social'><AiFillLinkedin/></Link>
+                    <Link to='/' className='reddit social'><GrReddit/></Link>
+                    <Link to='/' className='facebook social'><AiFillFacebook/></Link>
+                </div>
+                
             </div>
 			
 		</div>

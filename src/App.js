@@ -6,6 +6,7 @@ import Partners from "./components/pages/Partners/Partners";
 import Contact from "./components/pages/Contact/Contact";
 import Blog from "./components/pages/Blog/Blog";
 import Team from "./components/pages/Team/Team";
+import About from "./components/pages/About/About";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route path="/" exact component={Homepage} />
 					<Route path="/blog" exact component={Blog}/>
 					<Route path="/team" exact component={Team}/>
+					<Route path="/about" exact component={About}/>
 					<Route path="/contact" exact component={Contact} />
 					<Route path="/partners" exact component={Partners} />
 					<Route path="/services" exact component={Services} />
