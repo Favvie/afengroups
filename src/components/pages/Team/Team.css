@@ -10,6 +10,7 @@
 .team-hero-section {
     margin-bottom: 20px;
 }
+
 .team-heading {
 font-weight: bold;
 font-size: 50px;
@@ -17,6 +18,7 @@ letter-spacing: 0.38em;
 text-transform: uppercase;
 text-align: center;
 color: #150F40;
+padding-top: 1.5em;
 }
 
 .team-member{

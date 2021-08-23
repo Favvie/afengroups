@@ -7,7 +7,11 @@
 	padding: 0;
 }
 
+<<<<<<< HEAD
 .service {
+=======
+.afen-art {
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
     background-image: url("../../../img/afen-art-bg.jpg");
 
 	height: 100vh;
@@ -15,12 +19,23 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+<<<<<<< HEAD
 .services {
 	height: 100vh;
 	position: relative;
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
+=======
+
+.services {
+	/* height: 100vh; */
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1300px; */
+	padding:0 10%;
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
     /* align-items: end; */
 }
 
@@ -29,8 +44,14 @@
 	flex-direction: column;
 	/* justify-content: flex-end; */
 	/* padding-right: 10%;*/
+<<<<<<< HEAD
 	padding-top: 10%; 
     position: relative;
+=======
+	padding-top: 80px; 
+    position: relative;
+	height: 63%;
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
 
@@ -63,20 +84,30 @@
     border: none;
     color: #150F40;
     font-size: 18px;
-    letter-spacing: 9.5%;
+	text-align: center;
+	font-weight: bold;
 }
 
 .button-group {
+<<<<<<< HEAD
     /* position: absolute; */
     padding-top: 40%;
     padding-left: 50%;
+=======
+    position: relative;
+    padding-top: 40%;
+	/* bottom: 80px; */
+	/* right: 0; */
+    /* padding-left: 50%;  */
+	
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 
 }
 .btn {
     width: 74px;
-    padding: 5px;
+    padding: 12px 20px;
     border: none;
-    font-size: 1.5em;
+    font-size: 25px;
     
     background-color: rgb(255, 226, 96, 0.1);
     color:#ffe260;
@@ -91,6 +122,7 @@
 }
 
 
+<<<<<<< HEAD
 .headings{
     /* position: absolute; */
     /* transform: rotate(-90deg); */
@@ -102,23 +134,47 @@
 
 }
 
+=======
+
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 
 .service-heading {
     font-weight: 500;
-    font-size: 36px;
-    line-height: 55px;
+    font-size: 30px;
     letter-spacing: -0.03em;
     color: #FFE260;
     opacity: 0.3;
-    padding-right: 2em;
-    
+    /* padding-right: 2em; */
+		transform: rotate(180deg);
+	/* transform-origin: 0 0; */
+	/* writing-mode: vertical-rl; */
 }
+<<<<<<< HEAD
 /*
 .actives {
     font-size: 46px;
    
+=======
+
+.actives,.actived {
+	writing-mode: vertical-rl;	
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
+.actives {
+	font-size: 48px;
+}
+.actived {
+    font-size: 36px;
+    opacity: .2;
+}
+.headings {
+	/* width: 130px; */
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+}
+/*
 .right-col-1{
     background-image: url("../../../img/afen-real.jpg");
 

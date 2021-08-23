@@ -19,6 +19,10 @@ const Homepage = () => {
 		textDecoration: "none",
 	};
 
+	const active = {
+		color: '#ffe260',
+	};
+
 	return (
 		<div className="home-container">
 			<div className="container">

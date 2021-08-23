@@ -6,8 +6,10 @@
 	padding: 0;
 }
 .logo {
-	width: 6%;
-    display: block;
+	width: 50%;
+	height: 100%;
+    /* display: block; */
+	
 }
 .nav-links {
 	list-style: none;
@@ -15,14 +17,20 @@
 }
 
 .nav-link {
-	padding: 10px;
+	padding:0 10px;
+	/* height: 62.48px; */
 	font-family: "Ubuntu", sans-serif;
 	color: #a6a6a6;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active {
     color: #ffe260;
 }
+.active {
+    color: #ffe260;
+}
+
 
 .nav-container {
 	display: flex;
@@ -32,7 +40,7 @@
 	padding: 0 80px;
 	align-items: center;
 	background: #16222E;
-
+	height: 62.48px;
 }
 
 .contact-us {

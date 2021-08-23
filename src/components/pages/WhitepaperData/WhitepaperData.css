@@ -17,6 +17,10 @@
 nav {
 	display: flex;
 	position: relative;
+<<<<<<< HEAD
+=======
+    overflow-y: scroll;
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
 nav .sidebar {
@@ -27,10 +31,18 @@ nav .sidebar {
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
+<<<<<<< HEAD
 }
 
 .sidebar::-webkit-scrollbar {
 	display: none;
+=======
+    z-index: -1;
+}
+
+.sidebar::-webkit-scrollbar {
+	/* display: none; */
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
 nav .sidebar header h1 {
@@ -61,7 +73,10 @@ nav .sidebar ul li .nav-link {
 	font-size: 1em;
 	margin: 0;
 	justify-content: space-between;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 	font-size: 22px;
 	line-height: 25px;
 	color: #000000;
@@ -124,7 +139,11 @@ nav .sidebar ul li .nav-link {
 	nav .sidebar ul {
 		border: 1px solid black;
 		/* overflow-y: scroll; */
+<<<<<<< HEAD
 		overflow: hidden;
+=======
+		/* overflow: hidden; */
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 		height: 17em;
 	}
 
@@ -167,3 +186,32 @@ header {
 	font-size: 27px;
 	line-height: 62px;
 }
+<<<<<<< HEAD
+=======
+
+.subnav  {
+    padding: 2em;
+    padding-left: 2.2em;
+	
+	margin: 0;
+	
+	font-size: 22px;
+	line-height: 25px;
+    background-color: whitesmoke;
+    /* display: none; */
+	
+}
+
+.subnav a{
+    color: #000000;
+    font-size: .8em;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+[id^=btn]:checked + .subnav {
+    display: block;
+}
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
