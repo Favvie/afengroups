@@ -1,42 +1,98 @@
 import React from "react";
 import "./Navbar.css";
 import afenLogo from "../../../img/afenLogo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const Navbar = ({backgroundColor}) => {
+const Navbar = ({ backgroundColor, position, top }) => {
 	const decor = {
 		textDecoration: "none",
 	};
 
-	return (
-		<div className="nav-container" style={{backgroundColor}}>
-			<img className="logo" src={afenLogo} alt="" />
+	// let navlinks = document.querySelectorAll("nav-link");
+	// navlinks.forEach((navlink) => {
+	// 	navlink.addEventListener("click", function () {
+	// 		navlinks.forEach((btn) => btn.classList.add("active"));
+	// 		// this.classList.add('active');
+	// 	});
+	// });
 
-			<ul className='nav-links'>
-				<Link style={decor} to="/">
-					<li className='nav-link'>Home</li>
-				</Link>
-				<Link style={decor} to="/about">
-					<li className='nav-link'>About</li>
-				</Link>
-				<Link style={decor} to="/services">
-					<li className='nav-link'>Services</li>
-				</Link>
-				<Link style={decor} to="/marketplace">
-					<li className='nav-link'>Marketplace</li>
-				</Link>
-				<Link style={decor} to="/whitepaper">
-					<li className='nav-link'>Whitepaper</li>
-				</Link>
-				<Link style={decor} to="/partners">
-					<li className='nav-link'>Partners</li>
-				</Link>
-				<Link style={decor} to="/blog">
-					<li className='nav-link'>Blog</li>
-				</Link>
-				<Link style={decor} to="/team">
-					<li className='nav-link'>Team</li>
-				</Link>
+	return (
+		<div className="nav-container" style={{ backgroundColor, position, top }}>
+			<NavLink to="/">
+				<img className="logo" src={afenLogo} alt="" />
+			</NavLink>
+
+			<ul className="nav-links">
+				<NavLink
+					style={decor}
+					exact
+					to="/"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Home
+				</NavLink>
+				<NavLink
+					style={decor}
+					exact
+					to="/about"
+					activeClassName="active"
+					className="nav-link"
+				>
+					About
+				</NavLink>
+				<NavLink
+					style={decor}
+					exact
+					to="/services"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Services
+					<li></li>
+				</NavLink>
+				<NavLink
+					style={decor}
+					exact
+					to="/marketplace"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Marketplace
+				</NavLink>
+				<NavLink
+					style={decor}
+					exact
+					to="/whitepaper"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Whitepaper
+				</NavLink>
+				<NavLink
+					style={decor}
+					to="/partners"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Partners
+				</NavLink>
+				<NavLink
+					style={decor}
+					to="/blog"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Blog
+				</NavLink>
+				<NavLink
+					style={decor}
+					to="/team"
+					activeClassName="active"
+					className="nav-link"
+				>
+					Team
+				</NavLink>
 			</ul>
 			<Link style={decor} to="/contact" className="contact-us">
 				Contact Us

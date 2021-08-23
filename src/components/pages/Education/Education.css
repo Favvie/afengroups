@@ -1,0 +1,149 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.afen-art {
+    background-image: url("../../../img/afen-art-bg.jpg");
+
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.afen-education {
+	background-image: url("../../../img/AFEN-Education.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.afen-real-estate {
+	background-image: url("../../../img/afen-real.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.services {
+	/* height: 100vh; */
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1300px; */
+	padding:0 10%;
+    /* align-items: end; */
+}
+
+.right-col {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: flex-end; */
+	/* padding-right: 10%;*/
+	padding-top: 80px; 
+    position: relative;
+	height: 63%;
+}
+
+
+.right-col h1 {
+	color: #ffe260;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.035em;
+    padding: .5em 0;
+    
+}
+
+.right-col p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-bottom: 32px;
+    width: 332px;
+    
+}
+
+.learn{
+    background-color: #BF8B4B;
+    width: 175px;
+    padding: .7em ;
+    border-radius: 5px;
+    border: none;
+    color: #150F40;
+    font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.button-group {
+    position: relative;
+    padding-top: 40%;
+	/* bottom: 80px; */
+	/* right: 0; */
+    /* padding-left: 50%;  */
+	
+
+}
+.btn {
+    width: 74px;
+    padding: 12px 20px;
+    border: none;
+    font-size: 25px;
+    
+    background-color: rgb(255, 226, 96, 0.1);
+    color:#ffe260;
+    }
+
+.nav-left {
+    border-radius: 9px 0 0 9px;
+    margin-right: 5px;
+}
+.nav-right {
+    border-radius: 0 9px 9px 0;   
+}
+
+
+
+
+.service-heading {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: #FFE260;
+    opacity: 0.3;
+    /* padding-right: 2em; */
+		transform: rotate(180deg);
+	/* transform-origin: 0 0; */
+	/* writing-mode: vertical-rl; */
+}
+
+.actives,.actived {
+	writing-mode: vertical-rl;	
+}
+
+.actives {
+	font-size: 48px;
+}
+.actived {
+    font-size: 36px;
+    opacity: .2;
+}
+.headings {
+	/* width: 130px; */
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+}
+

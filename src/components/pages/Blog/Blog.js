@@ -2,7 +2,7 @@ import React from 'react'
 import './Blog.css'
 import Navbar from "../../molecules/Navbar/Navbar";
 import  afenblog  from '../../../img/afenblog.png';
-
+import Footer from '../../molecules/Footer/Footer';
 import  afenblog1  from '../../../img/afenblog1.png';
 import  afenblog2  from '../../../img/afenblog2.png';
 import  afenblog3  from '../../../img/afenblog3.png';
@@ -65,6 +65,7 @@ const Blog = () => {
             </div>
             
         </div>
+        <Footer />
         </div>
     )
 }
