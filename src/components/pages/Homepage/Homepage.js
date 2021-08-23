@@ -52,9 +52,7 @@ const Homepage = () => {
 				<ul className="sponsors">
 					<li className="sponsor">Bitmart</li>
 					<li className="sponsor">Julswap</li>
-					<li className="sponsor">CoinGecko</li>
 					<li className="sponsor">Pancake Swap</li>
-					<li className="sponsor">Coin MarketCap</li>
 				</ul>
 
 				<div className='features-price'>
@@ -66,7 +64,7 @@ const Homepage = () => {
 							ut augue. Augue mollis pretium aliquet feugiat cursus. Eu pulvinar
 							ultricies aliquam a scelerisque. Parturient et eget habitasse sed.
 						</p>
-						<Link style={decor} to="/" className="buy-now">
+						<Link style={decor} to="http://www.afenmarketplace.com/" className="buy-now">
 							Buy Now
 						</Link>
 					</div>
@@ -131,7 +129,7 @@ const Homepage = () => {
 						<h2 className='afro-title'>AFROX NFTS</h2>
 						<p className='afro-p'>AFRO X represents a confluence of modern, mystic and ancient African design as illustrated by stellar African Afromysterics and 3D digital artist, Jesse Tomi, put together by the AFEN blockchain group with the help of African historians and ancient African art curators.</p>
 						<p className='afro-p'>AFROXNFTs represent the core of African existence, displaying a mixture of culture and futurism. The collection is represented by 3 afro beings and a mythical creature: A man, a woman, a genderless child, and a masquerade.</p>
-						<Link style={decor} to='/' className='buy-now'>Buy now</Link>
+						<Link style={decor} to='http://www.afenmarketplace.com/' className='buy-now'>Buy now</Link>
 					</div>
 					<div className='afro-img'><img src={afroImg} alt="" /></div>
 

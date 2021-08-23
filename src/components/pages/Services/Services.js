@@ -16,23 +16,25 @@ const Services = () => {
 					
 
 					<div className='right-col'>
-						<h1>AFEN AND ART</h1>
-						<p>The digitization of contemporary and legacy African arts</p>
-						<p>An NFT marketplace where tokenized versions of legacy African arts will be bought and sold</p>
-						<p>Revolutionizing the African art sector by increasing the value of these arts and increasing inflow</p>
-						<Link className='learn'>Learn more</Link>
-
-					</div>
-					<div className="button-group">
-						<button className='btn nav-left'><AiOutlineArrowLeft/></button>
-						<button className='btn nav-right'><AiOutlineArrowRight/></button>
+						<div>
+							<h1>AFEN AND ART</h1>
+							<p>The digitization of contemporary and legacy African arts</p>
+							<p>An NFT marketplace where tokenized versions of legacy African arts will be bought and sold</p>
+							<p>Revolutionizing the African art sector by increasing the value of these arts and increasing inflow</p>
+							<Link className='learn'>Learn more</Link>
+						</div>
 						
+						<div className="button-group">
+							<button className='btn nav-left'><AiOutlineArrowLeft/></button>
+							<button className='btn nav-right'><AiOutlineArrowRight/></button>
+						</div>
 					</div>
+					
 
 					
 					
 				</div>
-				
+{/* 				
 				<div className="real-estate">
 					<div className="headings">
 						<h1 className='service-heading actives'>AFEN AND EDUCATION</h1>
@@ -71,7 +73,7 @@ const Services = () => {
 						<button className='btn nav-left'><AiOutlineArrowLeft/></button>
 						<button className='btn nav-right'><AiOutlineArrowRight/></button>			
 					</div>
-				</div>
+				</div> */}
 								
 
 				

@@ -1,4 +1,4 @@
-/*
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 * {
@@ -7,25 +7,32 @@
 	padding: 0;
 }
 
-.services {
-	background-image: url("../../../img/afen-art-bg.jpg");
+.service {
+    background-image: url("../../../img/afen-art-bg.jpg");
 
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.services {
+	height: 100vh;
 	position: relative;
     display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    /* align-items: end; */
 }
-/*
+
 .right-col {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	padding-right: 10%;
-	padding-top: 10%;
+	/* justify-content: flex-end; */
+	/* padding-right: 10%;*/
+	padding-top: 10%; 
+    position: relative;
 }
-/*
+
 
 .right-col h1 {
 	color: #ffe260;
@@ -33,9 +40,8 @@
 	font-size: 28px;
 	line-height: 32px;
 	letter-spacing: -0.035em;
-    padding: 1em;
-    padding-top: 0;
-    padding-left: 0;
+    padding: .5em 0;
+    
 }
 
 .right-col p {
@@ -61,7 +67,9 @@
 }
 
 .button-group {
-    right: 0;
+    /* position: absolute; */
+    padding-top: 40%;
+    padding-left: 50%;
 
 }
 .btn {
@@ -82,20 +90,19 @@
     border-radius: 0 9px 9px 0;   
 }
 
-.services {
-    position: relative;
-}
 
 .headings{
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 250px;
-    left: 0;
-    padding: 0;
-    margin-left: -100px;
+    /* position: absolute; */
+    /* transform: rotate(-90deg); */
+    /* top: 250px; */
+    /* left: 0;
+    padding: 0; */
+    /* margin-left: -100px; */
    
 
 }
+
+
 .service-heading {
     font-weight: 500;
     font-size: 36px;
@@ -106,7 +113,7 @@
     padding-right: 2em;
     
 }
-
+/*
 .actives {
     font-size: 46px;
    
