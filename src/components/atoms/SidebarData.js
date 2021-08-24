@@ -128,6 +128,12 @@ export const SidebarData = [
       path: '/reference',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
+
+    },
+    {
+      title: 'Support',
+      path: '/support',
+      icon: <IoIcons.IoMdHelpCircle />
     }
   ];
   

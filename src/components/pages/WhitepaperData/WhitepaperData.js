@@ -1,116 +1,130 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WhitepaperData.css";
 import Navbar from "../../molecules/Navbar/Navbar";
-import Footer from "../../molecules/Footer/Footer";
 import { Link } from "react-router-dom";
 import education from "../../../img/education.png";
 import blockchainG from "../../../img/blockchainG.png";
 import graph from "../../../img/graph.png";
 import token from "../../../img/token.png";
 import { GoChevronRight } from "react-icons/go";
+import { GoChevronDown } from "react-icons/go";
 
 const WhitepaperData = () => {
+	const [ toggle, setToggle ] = useState(false)
+	const [ toggle1, setToggle1 ] = useState(false)
+	const [ toggle2, setToggle2 ] = useState(false)
+	const [ toggle3, setToggle3 ] = useState(false)
+
+	const height = {
+		height: '90px',
+	}
+	
+
 	return (
 		<div>
-			<Navbar position={"sticky"} top={"0"} />
+			<Navbar position={"sticky"} top={"0"}/>
 			<div className="whitepaper-doc-section">
 				<nav id="navbar">
 					<div className="sidebar">
 						<ul>
 							<li>
 								<a href="#overview" className="nav-link" id="intro">
-									Overview <GoChevronRight className="chveron-icon" />
+									Overview <GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#real-estate" className="nav-link">
-									Real estate <GoChevronRight className="chveron-icon" />
+									Real estate <GoChevronRight  />
 								</a>
 							</li>
-							<li>
-								<a href="#arts" className="nav-link">
-									Arts<GoChevronRight className="chveron-icon" />
+							<li onClick={() => setToggle(!toggle)}>
+								<a href="#art" className="nav-link">
+									Arts
+									{ toggle ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								{/* <ul className="subnav">
+								<ul className={toggle ? 'panelshow' : 'panelhide'}>
 									<li>
-										<a href="#">3.1. Art in Africa</a>
+										<a href="#arts">3.1. Art in Africa</a>
 									</li>
-								</ul> */}
+								</ul>
 							</li>
-							<li>
+							<li onClick={() => setToggle1(!toggle1)}>
 								<a href="#education" className="nav-link">
-									Education <GoChevronRight className="chveron-icon" />
+									Education { toggle1 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
-								{/* 								
-								<ul className="subnav">
+
+								<ul className={toggle1 ? 'panelshow' : 'panelhide'}>
 									<li>
-										<a href="#">4.1 Education in Africa</a>
+										<a href="#educations">4.1 Education in Africa</a>
 									</li>
-								</ul> */}
+								</ul>
 							</li>
-							<li>
+							<li onClick={() => setToggle2(!toggle2)}>
 								<a href="#blockchain" className="nav-link">
 									Blockchain: Revolutionizing the Market{" "}
-									<GoChevronRight className="chveron-icon" />
+									{ toggle2 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								{/* <ul className="subnav">
+								<ul className={toggle2 ? 'panelshow' : 'panelhide'}>
 									<li>
-										<a href="#">5.1 Blockchain & Real Estate</a>
+										<a href="#blockchains">5.1 Blockchain & Real Estate</a>
 									</li>
 									<li>
-										<a href="#">5.2 Blockchain & Art</a>
+										<a href="#blockchainss">5.2 Blockchain & Art</a>
 									</li>
 									<li>
-										<a href="#">5.3 Blockchain & Education</a>
+										<a href="#blockchainsss">5.3 Blockchain & Education</a>
 									</li>
-								</ul> */}
+								</ul>
 							</li>
-							<li>
+							<li onClick={() => setToggle3(!toggle3)}>
 								<a href="#afen" className="nav-link">
 									AFEN: The Ultimate Combination{" "}
-									<GoChevronRight className="chveron-icon" />
+									{ toggle3 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
-								{/* 								
-								<ul className="subnav">
+
+								<ul className={toggle3 ? 'panelshow' : 'panelhide'}>
 									<li>
-										<a href="#">6.1 AFEN & Real Estate</a>
+										<a href="#afens">6.1 AFEN & Real Estate</a>
 									</li>
 									<li>
-										<a href="#">6.2. AFEN & Arts</a>
+										<a href="#afenss">6.2. AFEN & Arts</a>
 									</li>
 									<li>
-										<a href="#">6.3. AFEN & Education</a>
+										<a href="#afensss">6.3. AFEN & Education</a>
 									</li>
-								</ul> */}
+								</ul>
 							</li>
 							<li>
 								<a href="#afen_token" className="nav-link">
 									AFEN Token Utilities{" "}
-									<GoChevronRight className="chveron-icon" />
+									<GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#afen_services" className="nav-link">
-									AFEN Services <GoChevronRight className="chveron-icon" />
+									AFEN Services <GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#afen_team" className="nav-link">
-									AFEN Team <GoChevronRight className="chveron-icon" />
+									AFEN Team <GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#reference" className="nav-link">
-									Reference <GoChevronRight className="chveron-icon" />
+									Reference <GoChevronRight  />
 								</a>
+								<div id="#reference" style={height}></div>
 							</li>
 						</ul>
 					</div>
 				</nav>
 
 				<main id="main-doc">
+
+					<div id="overview" style={height}></div>
 					<section className="main-section" id="overview">
 						<header>
 							<h2>overview</h2>
@@ -141,6 +155,8 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
+
+					<div id="real-estate" style={height}></div>
 					<section className="main-section" id="real-estate">
 						<header>
 							<h2>real estate</h2>
@@ -167,6 +183,7 @@ const WhitepaperData = () => {
 							residential real estate development, particularly in the key
 							cities of Abuja, Lagos, and Port Harcourt.
 						</p>
+						
 						<p>
 							The Nigerian market remains attractive as there are numerous
 							opportunities available in the sector. There are opportunities for
@@ -180,9 +197,11 @@ const WhitepaperData = () => {
 								<li>Serviced flats</li>
 							</ul>
 						</p>
+						
 					</section>
 
-					<section className="main-section" id="arts">
+					<div id="art" style={height}></div>
+					<section className="main-section" id="art">
 						<header>
 							<h2>3. Arts</h2>
 						</header>
@@ -198,8 +217,9 @@ const WhitepaperData = () => {
 							2018, up from 39 million the previous year.
 						</p>
 
+						<div id="arts" style={height}></div>
 						<header>
-							<h2>3.1 Art in Africa</h2>
+							<h2 id='arts'>3.1 Art in Africa</h2>
 						</header>
 						<p>
 							African art and culture have thrived for generations, however,
@@ -216,8 +236,9 @@ const WhitepaperData = () => {
 							“valuable”.
 						</p>
 					</section>
-
-					<section className="main-section" id="education">
+					
+					<div id="education" style={height}></div>
+					<section className="main-section" id="">
 						<header>
 							<h2>4. Education</h2>
 						</header>
@@ -240,8 +261,10 @@ const WhitepaperData = () => {
 							change as the role of the teacher represents more of that of a
 							mentor/coach than ‘sage on the stage’.
 						</p>
+						
+						<div id="educations" style={height}></div>
 						<header>
-							<h2>4.1 Education in Africa</h2>
+							<h2 id='educations'>4.1 Education in Africa</h2>
 						</header>
 						<p>
 							Of all regions, sub-Saharan Africa has the highest rates of
@@ -258,7 +281,8 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					<section className="main-section" id="blockchain">
+					<div id="blockchain" style={height}></div>
+					<section className="main-section" id="">
 						<header>
 							<h2>5. Blockchain: Revolutionizing the Market</h2>
 						</header>
@@ -272,8 +296,10 @@ const WhitepaperData = () => {
 						</p>
 						<img src={blockchainG} alt="" />
 						<img src={graph} alt="" />
+
+						<div id="blockchains" style={height}></div>
 						<header>
-							<h2>5.1 Blockchain & Real Estate</h2>
+							<h2 id='blockchains'>5.1 Blockchain & Real Estate</h2>
 						</header>
 						<p>
 							Real estate has not escaped blockchain disruption either.
@@ -345,8 +371,9 @@ const WhitepaperData = () => {
 							distributed, meaning anyone connected to the network has a copy of
 							it.
 						</p>
+						<div id="blockchainss" style={height}></div>
 						<header>
-							<h2>5.2 Blockchain & Art</h2>
+							<h2 id='blockchainss'>5.2 Blockchain & Art</h2>
 						</header>
 						<p>
 							Art and NFTs allow users to exchange digital ownership in a
@@ -392,8 +419,10 @@ const WhitepaperData = () => {
 								markets.
 							</li>
 						</ol>
+
+						<div id="blockchainsss" style={height}></div>
 						<header>
-							<h2>5.3 Blockchain & Education</h2>
+							<h2 id='blockchainsss'>5.3 Blockchain & Education</h2>
 						</header>
 						<p>
 							Decentralized education brings open-source platforms to the table
@@ -469,6 +498,8 @@ const WhitepaperData = () => {
 							</li>
 						</ol>
 					</section>
+					
+					<div id="afen" style={height}></div>
 					<section className="main-section" id="afen">
 						<header>
 							<h2>6. AFEN: The Ultimate Combination</h2>
@@ -532,8 +563,10 @@ const WhitepaperData = () => {
 								of charity as the finance space rapidly transforms
 							</li>
 						</ol>
+
+						<div id="afens" style={height}></div>
 						<header>
-							<h2>6.1 AFEN & Real Estate</h2>
+							<h2 id='afens'>6.1 AFEN & Real Estate</h2>
 						</header>
 						<p>
 							We want to revolutionize the Real estate industry by
@@ -544,8 +577,10 @@ const WhitepaperData = () => {
 							This reduces overall cost of acquiring property and is also
 							beneficial for bequeathing land after death.
 						</p>
+
+						<div id="afenss" style={height}></div>
 						<header>
-							<h2>6.2. AFEN & Arts</h2>
+							<h2 id='afenss'>6.2. AFEN & Arts</h2>
 						</header>
 						<p>
 							We want to create a mainstream art movement that democratizes the
@@ -563,8 +598,10 @@ const WhitepaperData = () => {
 							being specified and minted on chain where they will be kept as an
 							immutable receipt of ownership.
 						</p>
+
+						<div id="afensss" style={height}></div>
 						<header>
-							<h2>6.3. AFEN & Education</h2>
+							<h2 id='afensss'>6.3. AFEN & Education</h2>
 						</header>
 						<p>
 							Many industries are now paying close attention to Blockchain
@@ -585,6 +622,8 @@ const WhitepaperData = () => {
 							most promising blockchain projects and individuals.
 						</p>
 					</section>
+					
+					<div id="afen_token" style={height}></div>
 					<section className="main-section" id="afen_token">
 						<header>
 							<h2>7. AFEN Token Utilities</h2>
@@ -736,6 +775,8 @@ const WhitepaperData = () => {
 							</tbody>
 						</table>
 					</section>
+					
+					<div id="afen_services" style={height}></div>
 					<section className="main-section" id="afen_services">
 						<header>
 							<h2>8. AFEN Services</h2>
@@ -979,6 +1020,8 @@ const WhitepaperData = () => {
 							</tbody>
 						</table>
 					</section>
+					
+					<div id="afen_team" style={height}></div>
 					<section className="main-section" id="afen_team">
 						<header>
 							<h2>
@@ -988,6 +1031,7 @@ const WhitepaperData = () => {
 						</header>
 					</section>
 
+					<div id="reference" style={height}></div>
 					<section className="main-section" id="reference">
 						<header>
 							<h2> 11. Reference</h2>
@@ -1036,7 +1080,6 @@ const WhitepaperData = () => {
 					</section>
 				</main>
 			</div>
-			<Footer />
 		</div>
 	);
 };

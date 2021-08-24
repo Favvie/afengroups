@@ -5,19 +5,11 @@
 	margin: 0;
 	padding: 0;
 }
-/* 
-* {
-    margin: 0;
-    padding:0;
-    text-decoration: none;
-    box-sizing: border-box;
-    /* font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5em; */
 
 nav {
 	display: flex;
 	position: relative;
-    overflow-y: scroll;
+	/* overflow-y: scroll; */
 }
 
 nav .sidebar {
@@ -28,11 +20,11 @@ nav .sidebar {
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
-    z-index: -1;
+	/* z-index: -1; */
 }
 
 .sidebar::-webkit-scrollbar {
-	/* display: none; */
+	display: none;
 }
 
 nav .sidebar header h1 {
@@ -50,17 +42,16 @@ nav .sidebar header h1 {
 } */
 nav .sidebar ul li {
 	list-style: none;
-	/* border-bottom: 1px solid rgba(68, 62, 62,0.5); */
-	/*border-top: 1px solid rgba(68, 62, 62, 0.5);*/
+
 	margin: 0;
 }
 
-nav .sidebar ul li .nav-link {
+nav .sidebar ul li .nav-link , .accordion {
 	display: flex;
 	/* color: #636567; */
 	/* padding: 1em 0em 1em 1.2em; */
 	padding: 2em;
-	font-size: 1em;
+	
 	margin: 0;
 	justify-content: space-between;
 	font-size: 22px;
@@ -68,13 +59,8 @@ nav .sidebar ul li .nav-link {
 	color: #000000;
 }
 
-.chevron-icon {
-	/* font-size: 1em;
-    width: 100px; */
-	color: #150f40;
-}
 #main-doc .main-section {
-	margin-top: 1em;
+	/* margin-top: 1em; */
 	margin-left: 22%;
 	margin-right: 3em;
 	color: #515355;
@@ -169,28 +155,43 @@ header {
 	line-height: 62px;
 }
 
-.subnav  {
-    padding: 2em;
-    padding-left: 2.2em;
-	
+.subnav {
+	padding: 2em;
+	padding-left: 2.2em;
+
 	margin: 0;
-	
+
 	font-size: 22px;
 	line-height: 25px;
-    background-color: whitesmoke;
-    /* display: none; */
-	
+	background-color: whitesmoke;
+	/* display: none; */
 }
 
-.subnav a{
-    color: #000000;
-    font-size: .8em;
-}
 
-input[type=checkbox] {
+.panelshow a {
+	color: #000000;
+	font-size: 0.8em;
+}
+.panelhide {
+    overflow: hidden;
     display: none;
 }
 
-[id^=btn]:checked + .subnav {
+.panelshow {
+    overflow: hidden;
     display: block;
+    padding: 2em;
+	padding-left: 2.2em;
+	margin: 0;
+	font-size: 22px;
+	line-height: 25px;
+	background-color: whitesmoke;
 }
+
+
+.actives, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+
+  
