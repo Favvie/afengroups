@@ -13,6 +13,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    /* z-index: -100; */
 
 
 }
@@ -86,4 +87,49 @@ text-align: right;
     font-size: 18px;
     /* line-height: 21px; */
     padding: .5em;
+}
+
+
+@media only screen and (max-width:768px) {
+    .blog-hero-section img{
+        width: 100%;
+    }
+
+    .blog-section {
+        margin-top: unset;
+    }
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post img {
+        width: 95%;
+        margin: auto;
+    }
+
+    .blog-content,.blog-content-2 {
+        font-size: 18px;
+        font-weight: unset;
+        padding-left: unset;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .blog-content h4, .blog-content-2 h4 {
+        font-size: 14px;
+    }
+
+    .blog-title {
+        font-size: 18px;
+
+    }
+    .blog-content-2 {
+        text-align: left;
+        padding-right: unset;
+    }
+
+    .blog-post-2 {
+        flex-direction: column-reverse;
+    }
 }

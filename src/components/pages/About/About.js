@@ -1,13 +1,13 @@
 import React from "react";
 import "./About.css";
 import Navbar from "../../molecules/Navbar/Navbar";
-import Footer from "../../molecules/Footer/Footer";
+// import Footer from "../../molecules/Footer/Footer";
 import roadmap from "../../../img/roadmap-img.png";
 import piechart from "../../../img/piechart.png";
 import piechartData from "../../../img/piechart-data.png";
 const About = () => {
 	return (
-		<div>
+		<>
 			<Navbar />
 			<div className="about-hero-section">
 				<h1 className="about-heading">ABOUT US</h1>
@@ -25,7 +25,7 @@ const About = () => {
 				<div>
 					<h1 className="roadmap">ROADMAP</h1>
 					<div className="roadmap-img">
-						<img src={roadmap} alt="" />
+						<img src={roadmap} alt="" className='roadmap-image'/>
 					</div>
 					<div className="timeline1">
 						<h1>JULY 2021</h1>
@@ -64,20 +64,20 @@ const About = () => {
 					</div>
 				</div>
 				<div className="tokens">
-					<h1 className="tokenomics">TOKENOMICS</h1>
+					<h1 className="tokenomics">tokenomics</h1>
 					<div className="tokenomics-img">
-						<div>
+						<div className='pie'>
 							<img src={piechart} alt="" className="piechart-img" />
 						</div>
-						<div>
+						<div className='pieData'>
 							<img src={piechartData} alt="" className="piechartData" />
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<Footer />
-		</div>
+			{/* <Footer /> */}
+		</>
 	);
 };
 

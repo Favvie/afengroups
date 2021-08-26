@@ -34,7 +34,6 @@
 .sub-heading {
 	font-weight: 300;
 	font-size: 36px;
-	line-height: 41px;
 	color: #595959;
 	text-align: center;
 	font-family: "Ubuntu", sans-serif;
@@ -95,4 +94,34 @@ padding: 26px;
     font-size: 25px;
     color: #FFC30B;
     
+}
+
+@media only screen and (max-width:768px) {
+    .contact-heading {
+        font-size: 24px;
+        padding: 10% 0;
+    }
+
+.sub-heading{
+    font-size: 24px;
+    padding: 10% 0;
+}
+
+    .form-container {
+        width: 100%;
+        padding:0 5%;
+    }
+
+    .our-socials {
+        width: 100%;
+    }
+
+    .socials-heading {
+        font-size: 18px;
+    }
+
+    .socials {
+        /* padding-right: 3%; */
+        display: flex;
+    }
 }

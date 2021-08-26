@@ -1,13 +1,14 @@
 import React from "react";
 import "./Services.css";
 import Navbar from "../../molecules/Navbar/Navbar";
+import Footer from "../../molecules/Footer/Footer";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Services = () => {
 	return <div className='service afen-art'>
-				<Navbar />
+				<Navbar backgroundColor= {'transparent'}/>
 				<div className='services'>
 					<div className="headings">
 						<h1 className='service-heading actived'>AFEN AND REAL ESTATE</h1>
@@ -31,7 +32,7 @@ const Services = () => {
 					</div>
 				</div>
 
-
+				<Footer />
 				
 			</div>;
 };

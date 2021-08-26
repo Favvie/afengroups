@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
 .logo {
 	width: 50%;
 	height: 100%;
-    /* display: block; */
-	
 }
 .nav-links {
 	list-style: none;
@@ -17,29 +15,25 @@
 }
 
 .nav-link {
-	padding:0 10px;
-	/* height: 62.48px; */
+	padding: 10px;
 	font-family: "Ubuntu", sans-serif;
 	color: #a6a6a6;
 }
 
 .nav-link:hover,
-.active {
-    color: #ffe260;
+.activated {
+	color: #ffe260;
 }
-.active {
-    color: #ffe260;
+.activated {
+	color: #ffe260;
 }
-
 
 .nav-container {
 	display: flex;
 	justify-content: space-between;
-	/* max-width: 1300px; */
-	/* margin: auto; */
 	padding: 0 80px;
 	align-items: center;
-	background: #16222E;
+	background: #16222e;
 	height: 62.48px;
 }
 
@@ -50,6 +44,97 @@
 	border-radius: 9px;
 	color: #ffe260;
 	background: #0b0726;
-	/* font-size: 1px; */
+}
+.right-icon,
+.hamburger,
+.close-icon {
+	display: none;
 }
 
+@media only screen and (max-width: 768px) {
+	.nav-container {
+		justify-content: center;
+		align-items: center;
+		padding: 50px 0 30px 0;
+		/* margin-left: 50%; */
+	}
+	.logo {
+		width: 100%;
+	}
+
+	.nav-container {
+		overflow: clip;
+	}
+	.nav-links {
+		flex-direction: column;
+		width: 90%;
+		height: 100vh;
+		background: white;
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		/* overflow: hidden; */
+		/* transition: 850ms; */
+		display: none;
+	}
+
+	.activated {
+		/* right: -100%;
+		transition: 350ms; */
+		display: flex;
+		transition: width 850ms;
+	}
+
+	.contact-us {
+		/* width: 100%; */
+		display: none;
+	}
+
+	.nav-link {
+		padding: 20px 16px;
+		border-bottom: 1px solid #8f8f8f5c;
+		/* background-color: black; */
+	}
+
+	.close-icon {
+		padding: 16px;
+		padding-bottom: 10px;
+	}
+
+	.right-icon {
+		float: right;
+	}
+
+	.active {
+		background-color: rgba(11, 7, 38, 0.7);
+		color: white;
+	}
+	.active:hover {
+		background-color: rgba(11, 7, 38, 0.7) !important;
+		color: white !important;
+	}
+
+	.nav-link:hover {
+		background-color: rgba(11, 7, 38, 0.1);
+		color: #a6a6a6;
+	}
+
+	.right-icon,
+	.hamburger,
+	.close-icon {
+		display: block;
+	}
+
+	.hamburger {
+		color: white;
+		font-size: 27px;
+		top: 5%;
+		position: absolute;
+		right: 5%;
+		cursor: pointer;
+	}
+
+	
+	
+}

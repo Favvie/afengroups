@@ -32,7 +32,7 @@ const Blog = () => {
                 </div>
                 
             </div>
-            <div className='blog-post'>
+            <div className='blog-post blog-post-2'>
             <div className='blog-content-2'>
                     <h4>24 July, 2021</h4>
                     <h2 className='blog-title'>DEVELOPMENT UPDATE #7 : JUNE AND GENERAL UPDATES.</h2>
@@ -52,8 +52,8 @@ const Blog = () => {
                 </div>
                 
             </div>
-            <div className='blog-post'>
-            <div className='blog-content-2'>
+            <div className='blog-post blog-post-2'>
+                <div className='blog-content-2'>
                     <h4>06 August 2021</h4>
                     <h2 className='blog-title'>AFEN TRENDS: 5 Things you should know about the new NFT euphoria.</h2>
                     <p>Lorem lacus integer fermentum donec. Imperdiet pellentesque tortor commodo vitae. Eget vitae purus est laoreet phasellus. Tristique nullam interdum amet, elementum amet posuere. Nisl viverra elit adipiscing dolor, etiam risus, elementum tortor urna. Amet, massa eleifend velit, volutpat. Nisl mi sem volutpat arcu.</p>

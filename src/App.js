@@ -10,6 +10,7 @@ import About from "./components/pages/About/About";
 import Education from "./components/pages/Education/Education";
 import RealEstate from "./components/pages/RealEstate/RealEstate";
 import WhitepaperData from "./components/pages/WhitepaperData/WhitepaperData";
+import Dashboard from "./components/pages/Dashboard/Dashboard";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 					<Route path="/services/real-estate" exact component={RealEstate} />
 					<Route path="/whitepaper" exact component={Whitepaper} />
 					<Route path="/whitepaperData" exact component={WhitepaperData} />
+					<Route path="/dashboard" exact component={Dashboard} />
 				</Switch>
 			</Router>
 		</>

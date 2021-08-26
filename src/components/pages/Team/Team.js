@@ -32,7 +32,7 @@ const Team = () => {
                 </div>
 
                 <div className="team-member-2">
-                <div className='data-2'>
+                    <div className='data-2'>
                         <h4 className='name-2'>Rugi Kavamahanga</h4>
                         <p className='role-2'>Chief Marketing Officer</p>
                         <p className='about-2'>Rugi Kavamahanga is a Blockchain marketing professional with experience in community engagement and strategic messaging development. He has been working in Crypto since 2017 and has had an MBA from Penn State University.</p>

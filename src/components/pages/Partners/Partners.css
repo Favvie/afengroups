@@ -86,3 +86,25 @@ margin-bottom: 20px;
 
 	color: #ffe260;
 }
+
+@media only screen and (max-width: 768px){
+	.partners {
+		width: 100%;
+		/* display: none; */
+		height: 20vh;
+	}
+
+	.partners-cards {
+		grid-template-columns: auto;
+		margin: 5%;
+
+		/* column-gap: unset; */
+		/* row-gap: unset; */
+	}
+
+	.load-more {
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+}
