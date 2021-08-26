@@ -8,60 +8,51 @@ import graph from "../../../img/graph.png";
 import token from "../../../img/token.png";
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronDown } from "react-icons/go";
-import { FaBars } from "react-icons/fa";
 
 const WhitepaperData = () => {
-	const [toggle, setToggle] = useState(false);
-	const [toggle1, setToggle1] = useState(false);
-	const [toggle2, setToggle2] = useState(false);
-	const [toggle3, setToggle3] = useState(false);
-	const [sidebars, setSidebar] = useState(false);
+	const [ toggle, setToggle ] = useState(false)
+	const [ toggle1, setToggle1 ] = useState(false)
+	const [ toggle2, setToggle2 ] = useState(false)
+	const [ toggle3, setToggle3 ] = useState(false)
 
-	const showSidebar = () => setSidebar(!sidebars);
 	const height = {
-		height: "90px",
-	};
-
+		height: '90px',
+	}
+	
 	const active = {
-		color: "#BF8B4B",
-	};
+		color: '#BF8B4B',
+	}
 
 	const notActive = {
-		color: "#000",
-	};
+		color: '#000',
+	}
+
+
 
 	return (
 		<div>
-			<Navbar position={"sticky"} top={"0"} />
-			<FaBars className="whitepaper-btn" onClick={showSidebar} />
+			<Navbar position={"sticky"} top={"0"}/>
 			<div className="whitepaper-doc-section">
 				<nav id="navbar">
-					<div className={sidebars ? "sidebar activateds" : "sidebar"}>
+					<div className="sidebar">
 						<ul>
-							<Link to="#overview" className="nav-link" id="intro">
-								Overview <GoChevronRight />
-							</Link>
-							{/* <li>
+							<li>
 								<a href="#overview" className="nav-link" id="intro">
 									Overview <GoChevronRight  />
 								</a>
-							</li> */}
-
-							<Link to="#real-estate" className="nav-link" >
-								Real estate <GoChevronRight />
-							</Link>
-							{/* <li>
+							</li>
+							<li>
 								<a href="#real-estate" className="nav-link">
-									Real estate <GoChevronRight />
+									Real estate <GoChevronRight  />
 								</a>
-							</li> */}
+							</li>
 							<li onClick={() => setToggle(!toggle)}>
 								<a href="#art" className="nav-link">
 									Arts
-									{toggle ? <GoChevronDown /> : <GoChevronRight />}
+									{ toggle ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								<ul className={toggle ? "panelshow" : "panelhide"}>
+								<ul className={toggle ? 'panelshow' : 'panelhide'}>
 									<li>
 										<a href="#arts">3.1. Art in Africa</a>
 									</li>
@@ -69,10 +60,10 @@ const WhitepaperData = () => {
 							</li>
 							<li onClick={() => setToggle1(!toggle1)}>
 								<a href="#education" className="nav-link">
-									Education {toggle1 ? <GoChevronDown /> : <GoChevronRight />}
+									Education { toggle1 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								<ul className={toggle1 ? "panelshow" : "panelhide"}>
+								<ul className={toggle1 ? 'panelshow' : 'panelhide'}>
 									<li>
 										<a href="#educations">4.1 Education in Africa</a>
 									</li>
@@ -81,10 +72,10 @@ const WhitepaperData = () => {
 							<li onClick={() => setToggle2(!toggle2)}>
 								<a href="#blockchain" className="nav-link">
 									Blockchain: Revolutionizing the Market{" "}
-									{toggle2 ? <GoChevronDown /> : <GoChevronRight />}
+									{ toggle2 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								<ul className={toggle2 ? "panelshow" : "panelhide"}>
+								<ul className={toggle2 ? 'panelshow' : 'panelhide'}>
 									<li>
 										<a href="#blockchains">5.1 Blockchain & Real Estate</a>
 									</li>
@@ -97,16 +88,12 @@ const WhitepaperData = () => {
 								</ul>
 							</li>
 							<li onClick={() => setToggle3(!toggle3)}>
-								<a
-									href="#afen"
-									className="nav-link"
-									style={toggle3 ? active : notActive}
-								>
+								<a href="#afen" className="nav-link" style={toggle3 ? active : notActive}>
 									AFEN: The Ultimate Combination{" "}
-									{toggle3 ? <GoChevronDown /> : <GoChevronRight />}
+									{ toggle3 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
 
-								<ul className={toggle3 ? "panelshow" : "panelhide"}>
+								<ul className={toggle3 ? 'panelshow' : 'panelhide'}>
 									<li>
 										<a href="#afens">6.1 AFEN & Real Estate</a>
 									</li>
@@ -120,22 +107,23 @@ const WhitepaperData = () => {
 							</li>
 							<li>
 								<a href="#afen_token" className="nav-link">
-									AFEN Token Utilities <GoChevronRight />
+									AFEN Token Utilities{" "}
+									<GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#afen_services" className="nav-link">
-									AFEN Services <GoChevronRight />
+									AFEN Services <GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#afen_team" className="nav-link">
-									AFEN Team <GoChevronRight />
+									AFEN Team <GoChevronRight  />
 								</a>
 							</li>
 							<li>
 								<a href="#reference" className="nav-link">
-									Reference <GoChevronRight />
+									Reference <GoChevronRight  />
 								</a>
 								<div id="#reference" style={height}></div>
 							</li>
@@ -144,6 +132,7 @@ const WhitepaperData = () => {
 				</nav>
 
 				<main id="main-doc">
+
 					<div id="overview" style={height}></div>
 					<section className="main-section" id="overview">
 						<header>
@@ -175,6 +164,7 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
+
 					<div id="real-estate" style={height}></div>
 					<section className="main-section" id="real-estate">
 						<header>
@@ -202,7 +192,7 @@ const WhitepaperData = () => {
 							residential real estate development, particularly in the key
 							cities of Abuja, Lagos, and Port Harcourt.
 						</p>
-
+						
 						<p>
 							The Nigerian market remains attractive as there are numerous
 							opportunities available in the sector. There are opportunities for
@@ -216,6 +206,7 @@ const WhitepaperData = () => {
 								<li>Serviced flats</li>
 							</ul>
 						</p>
+						
 					</section>
 
 					<div id="art" style={height}></div>
@@ -237,7 +228,7 @@ const WhitepaperData = () => {
 
 						<div id="arts" style={height}></div>
 						<header>
-							<h2 id="arts">3.1 Art in Africa</h2>
+							<h2 id='arts'>3.1 Art in Africa</h2>
 						</header>
 						<p>
 							African art and culture have thrived for generations, however,
@@ -254,7 +245,7 @@ const WhitepaperData = () => {
 							“valuable”.
 						</p>
 					</section>
-
+					
 					<div id="education" style={height}></div>
 					<section className="main-section" id="">
 						<header>
@@ -266,7 +257,7 @@ const WhitepaperData = () => {
 							massive expansion and technology drives unprecedented re-skilling
 							and up-skilling in developed economies.
 						</p>
-						<img className="whitepaper-image" src={education} alt="" />
+						<img className='whitepaper-image' src={education} alt="" />
 						<p>
 							The next decade will see an additional 350 million post-secondary
 							graduates and nearly 800 million more K12 graduates than today.
@@ -279,10 +270,10 @@ const WhitepaperData = () => {
 							change as the role of the teacher represents more of that of a
 							mentor/coach than ‘sage on the stage’.
 						</p>
-
+						
 						<div id="educations" style={height}></div>
 						<header>
-							<h2 id="educations">4.1 Education in Africa</h2>
+							<h2 id='educations'>4.1 Education in Africa</h2>
 						</header>
 						<p>
 							Of all regions, sub-Saharan Africa has the highest rates of
@@ -312,12 +303,12 @@ const WhitepaperData = () => {
 							for supply chain management applications integrated with the
 							blockchain technology will drive the overall blockchain market.
 						</p>
-						<img className="whitepaper-image" src={blockchainG} alt="" />
-						<img className="whitepaper-image" src={graph} alt="" />
+						<img className='whitepaper-image' src={blockchainG} alt="" />
+						<img className='whitepaper-image' src={graph} alt="" />
 
 						<div id="blockchains" style={height}></div>
 						<header>
-							<h2 id="blockchains">5.1 Blockchain & Real Estate</h2>
+							<h2 id='blockchains'>5.1 Blockchain & Real Estate</h2>
 						</header>
 						<p>
 							Real estate has not escaped blockchain disruption either.
@@ -391,7 +382,7 @@ const WhitepaperData = () => {
 						</p>
 						<div id="blockchainss" style={height}></div>
 						<header>
-							<h2 id="blockchainss">5.2 Blockchain & Art</h2>
+							<h2 id='blockchainss'>5.2 Blockchain & Art</h2>
 						</header>
 						<p>
 							Art and NFTs allow users to exchange digital ownership in a
@@ -440,7 +431,7 @@ const WhitepaperData = () => {
 
 						<div id="blockchainsss" style={height}></div>
 						<header>
-							<h2 id="blockchainsss">5.3 Blockchain & Education</h2>
+							<h2 id='blockchainsss'>5.3 Blockchain & Education</h2>
 						</header>
 						<p>
 							Decentralized education brings open-source platforms to the table
@@ -516,7 +507,7 @@ const WhitepaperData = () => {
 							</li>
 						</ol>
 					</section>
-
+					
 					<div id="afen" style={height}></div>
 					<section className="main-section" id="afen">
 						<header>
@@ -584,7 +575,7 @@ const WhitepaperData = () => {
 
 						<div id="afens" style={height}></div>
 						<header>
-							<h2 id="afens">6.1 AFEN & Real Estate</h2>
+							<h2 id='afens'>6.1 AFEN & Real Estate</h2>
 						</header>
 						<p>
 							We want to revolutionize the Real estate industry by
@@ -598,7 +589,7 @@ const WhitepaperData = () => {
 
 						<div id="afenss" style={height}></div>
 						<header>
-							<h2 id="afenss">6.2. AFEN & Arts</h2>
+							<h2 id='afenss'>6.2. AFEN & Arts</h2>
 						</header>
 						<p>
 							We want to create a mainstream art movement that democratizes the
@@ -619,7 +610,7 @@ const WhitepaperData = () => {
 
 						<div id="afensss" style={height}></div>
 						<header>
-							<h2 id="afensss">6.3. AFEN & Education</h2>
+							<h2 id='afensss'>6.3. AFEN & Education</h2>
 						</header>
 						<p>
 							Many industries are now paying close attention to Blockchain
@@ -640,7 +631,7 @@ const WhitepaperData = () => {
 							most promising blockchain projects and individuals.
 						</p>
 					</section>
-
+					
 					<div id="afen_token" style={height}></div>
 					<section className="main-section" id="afen_token">
 						<header>
@@ -793,7 +784,7 @@ const WhitepaperData = () => {
 							</tbody>
 						</table>
 					</section>
-
+					
 					<div id="afen_services" style={height}></div>
 					<section className="main-section" id="afen_services">
 						<header>
@@ -1038,7 +1029,7 @@ const WhitepaperData = () => {
 							</tbody>
 						</table>
 					</section>
-
+					
 					<div id="afen_team" style={height}></div>
 					<section className="main-section" id="afen_team">
 						<header>

@@ -9,7 +9,11 @@
 nav {
 	display: flex;
 	position: relative;
+
+    overflow-y: scroll;
+
 	/* overflow-y: scroll; */
+
 }
 
 nav .sidebar {
@@ -19,12 +23,17 @@ nav .sidebar {
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
-	/* z-index: -1; */
+
+
 }
 
 .sidebar::-webkit-scrollbar {
 	display: none;
+
+    z-index: -1;
 }
+
+
 
 nav .sidebar header h1 {
 	margin: 1em;
@@ -51,6 +60,7 @@ nav .sidebar ul li .nav-link , .accordion {
 	
 	margin: 0;
 	justify-content: space-between;
+
 	font-size: 22px;
 	line-height: 25px;
 	color: #000000;
@@ -93,12 +103,69 @@ nav .sidebar ul li .nav-link , .accordion {
 	list-style-type: decimal;
 }
 
+@media only screen and (max-width: 768px) {
+	nav .sidebar {
+		position: relative;
+		width: 100%;
+		/* overflow-y: unset; */
+		overflow: hidden;
+	}
+
+	nav .sidebar header h1 {
+		text-align: center;
+	}
+
+	nav .sidebar ul {
+		border: 1px solid black;
+		/* overflow-y: scroll; */
+
+		overflow: hidden;
+
+		/* overflow: hidden; */
+
+		height: 17em;
+	}
+
+	#main-doc .main-section {
+		text-align: left;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#main-doc .main-section ul li {
+		margin-left: 2em;
+	}
+}
+
+table,
+td {
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+table {
+	margin-top: 2em;
+}
+tr {
+	padding: 0.5em;
+}
+/* 
+table tr td ul li{
+    padding:.5em;
+    list-style: disc;
+}
+
+td ol li{
+    padding: 0;
+    list-style: disc;
+} */
 
 header {
 	font-weight: 500;
 	font-size: 27px;
 	line-height: 62px;
 }
+
 
 .subnav {
 	padding: 2em;
@@ -125,13 +192,10 @@ header {
 .panelshow {
     overflow: hidden;
     display: block;
-    padding: 2em;
-	padding-left: 2.2em;
-	margin: 0;
-	font-size: 22px;
-	line-height: 25px;
-	background-color: whitesmoke;
+
 }
+
+
 
  .accordion:hover {
     background-color: #ccc;
@@ -226,3 +290,4 @@ tr {
 	}
 
 }
+  
