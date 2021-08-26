@@ -7,7 +7,11 @@
 	padding: 0;
 }
 
+<<<<<<< HEAD
+.service {
+=======
 .afen-art {
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
     background-image: url("../../../img/afen-art-bg.jpg");
 
 	height: 100vh;
@@ -15,6 +19,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+<<<<<<< HEAD
+.services {
+	height: 100vh;
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+=======
 
 .services {
 	/* height: 100vh; */
@@ -23,6 +35,7 @@
     justify-content: space-between;
     /* max-width: 1300px; */
 	padding:0 10%;
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
     /* align-items: end; */
 }
 
@@ -31,9 +44,14 @@
 	flex-direction: column;
 	/* justify-content: flex-end; */
 	/* padding-right: 10%;*/
+<<<<<<< HEAD
+	padding-top: 10%; 
+    position: relative;
+=======
 	padding-top: 80px; 
     position: relative;
 	height: 63%;
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
 
@@ -71,12 +89,18 @@
 }
 
 .button-group {
+<<<<<<< HEAD
+    /* position: absolute; */
+    padding-top: 40%;
+    padding-left: 50%;
+=======
     position: relative;
     padding-top: 40%;
 	/* bottom: 80px; */
 	/* right: 0; */
     /* padding-left: 50%;  */
 	
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 
 }
 .btn {
@@ -98,7 +122,21 @@
 }
 
 
+<<<<<<< HEAD
+.headings{
+    /* position: absolute; */
+    /* transform: rotate(-90deg); */
+    /* top: 250px; */
+    /* left: 0;
+    padding: 0; */
+    /* margin-left: -100px; */
+   
 
+}
+
+=======
+
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 
 .service-heading {
     font-weight: 500;
@@ -111,9 +149,16 @@
 	/* transform-origin: 0 0; */
 	/* writing-mode: vertical-rl; */
 }
+<<<<<<< HEAD
+/*
+.actives {
+    font-size: 46px;
+   
+=======
 
 .actives,.actived {
 	writing-mode: vertical-rl;	
+>>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
 }
 
 .actives {

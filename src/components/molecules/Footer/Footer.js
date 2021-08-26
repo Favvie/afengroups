@@ -4,12 +4,14 @@ import afenLogo from "../../../img/afenLogo.png";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 import { GrReddit } from "react-icons/gr";
-import { AiFillFacebook, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
-const Footer = () => {
+function Footer(){
+  
     const decor = {
 		textDecoration: "none",
 	};
+
 
 	return (
 		<div className="footer">
@@ -18,8 +20,10 @@ const Footer = () => {
                     <h4>Newsletter</h4>
                     <p>Subscribe for our newsletter</p>
                     <div className="input-group">
-                        <input type="text" placeholder='Your E-mail address' className='email-input'/>
+                     <form action="/signup" method="POST">
+                        <input type="email" placeholder='Your E-mail address' className='email-input'/>
                         <button className="signUp-btn">Sign up</button>
+                    </form>
                     </div>
                 </div>
                 <div className="company">
@@ -55,12 +59,12 @@ const Footer = () => {
                 </div>
                 
                 <div className="socials">
-                    <Link to='/' className='twitter social'><FaTwitter/></Link>
-                    <Link to='/' className='telegram social'><FaTelegramPlane /></Link>
-                    <Link to='/' className='instagram social'><AiFillInstagram/></Link>
-                    <Link to='/' className='linkedin social'><AiFillLinkedin/></Link>
-                    <Link to='/' className='reddit social'><GrReddit/></Link>
-                    <Link to='/' className='facebook social'><AiFillFacebook/></Link>
+                    <Link to='https://twitter.com/Afenblockchain' className='twitter social'><FaTwitter/></Link>
+                    <Link to='http://t.me/afenblockchain' className='telegram social'><FaTelegramPlane /></Link>
+                    <Link to='https://instagram.com/afenblockchain' className='instagram social'><AiFillInstagram/></Link>
+                    <Link to='' className='linkedin social'><AiFillLinkedin/></Link>
+                    <Link to='https://www.reddit.com/r/AfenCommunity/' className='reddit social'><GrReddit/></Link>
+                    
                 </div>
                 
             </div>

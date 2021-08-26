@@ -9,7 +9,11 @@
 nav {
 	display: flex;
 	position: relative;
+
+    overflow-y: scroll;
+
 	/* overflow-y: scroll; */
+
 }
 
 nav .sidebar {
@@ -20,11 +24,26 @@ nav .sidebar {
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
+
+
+}
+
+.sidebar::-webkit-scrollbar {
+	display: none;
+
+    z-index: -1;
+}
+
+.sidebar::-webkit-scrollbar {
+	/* display: none; */
+
+
 	/* z-index: -1; */
 }
 
 .sidebar::-webkit-scrollbar {
 	display: none;
+
 }
 
 nav .sidebar header h1 {
@@ -54,6 +73,7 @@ nav .sidebar ul li .nav-link , .accordion {
 	
 	margin: 0;
 	justify-content: space-between;
+
 	font-size: 22px;
 	line-height: 25px;
 	color: #000000;
@@ -111,7 +131,11 @@ nav .sidebar ul li .nav-link , .accordion {
 	nav .sidebar ul {
 		border: 1px solid black;
 		/* overflow-y: scroll; */
+
+		overflow: hidden;
+
 		/* overflow: hidden; */
+
 		height: 17em;
 	}
 
@@ -155,6 +179,7 @@ header {
 	line-height: 62px;
 }
 
+
 .subnav {
 	padding: 2em;
 	padding-left: 2.2em;
@@ -180,6 +205,10 @@ header {
 .panelshow {
     overflow: hidden;
     display: block;
+
+}
+
+=======
     padding: 2em;
 	padding-left: 2.2em;
 	margin: 0;
