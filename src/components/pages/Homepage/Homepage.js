@@ -132,7 +132,7 @@ const Homepage = () => {
 						<p className='afro-p'>AFROXNFTs represent the core of African existence, displaying a mixture of culture and futurism. The collection is represented by 3 afro beings and a mythical creature: A man, a woman, a genderless child, and a masquerade.</p>
 						<Link style={decor} to='http://www.afenmarketplace.com/' className='buy-now'>Buy now</Link>
 					</div>
-					<div className='afro-img'><img src={afroImg} alt="" /></div>
+					<div className='afro-img'><img src={afroImg} alt="" className='afro-image' /></div>
 
 				</div>
 			</div>

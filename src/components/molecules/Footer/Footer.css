@@ -23,6 +23,7 @@
 	font-size: 20px;
 	line-height: 27px;
 	padding-bottom: 1em;
+	font-weight: normal;
 }
 
 .newsletter p {
@@ -45,13 +46,11 @@
 	display: flex;
 	flex-direction: column;
 	color: white;
-	
 }
 
 .quicklinks h3,
-.go-to h3{
-	padding-bottom: .7em;
-
+.go-to h3 {
+	padding-bottom: 0.7em;
 }
 .input-group {
 	margin: 1em 0;
@@ -109,4 +108,96 @@
 	border-top: 1px solid #494343;
 	transform: rotate(0.26deg);
 	padding: 1em 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.footer {
+		padding: unset;
+	}
+
+	.footer-top {
+		flex-direction: column-reverse	;
+	}
+
+	.footer-bottom {
+		flex-direction: column-reverse;
+	}
+
+	.email-input {
+		width: 75%;
+	}
+
+	.company {
+		width: 100%;
+		font-size: 14px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.company-p {
+		width: 70%;
+		margin: auto;
+		line-height: 19.12px;
+		text-align: center;
+	}
+
+
+	.company img {
+		width: 20%;
+		height: 20%;
+		margin: auto;
+	}
+
+	.newsletter {
+		text-align: center;
+	}
+
+	.newsletter h4 {
+		padding-bottom: unset;
+		padding: 3% 0;
+	}
+
+	.quicklinks h3,
+	.go-to h3 {
+		padding-bottom: unset;
+		padding: 3%;
+	}
+
+	.quick-link,
+	.go-to-link {
+		border-bottom: 1px solid #494343;
+		margin: 3%;
+		color: white;
+		position: relative;
+	}
+
+	.quick-link:before,
+	.go-to-link:before {
+		position: absolute;
+		content: "+2192";
+		/* float: right; */
+		right: 1%;
+	}
+
+	.socials {
+		display: flex;
+		justify-content: space-between;
+		/* width: 90%;
+		margin: auto; */
+		padding-bottom: 1%;
+		padding:0 10% ;
+		border-bottom: 1px solid #494343;
+
+	}
+
+	.afen {
+		justify-content: space-between;
+		padding: 3%;
+	}
+
+	.footer-bottom {
+		border-top: unset;
+	}
+
+
 }

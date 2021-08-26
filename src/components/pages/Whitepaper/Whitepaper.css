@@ -20,7 +20,6 @@
     vertical-align: baseline;
     font-weight: bold;
     font-size: 70px;
-    line-height: 80px;
     text-align: center;
     padding-top: 14%;
 /* display: flex;
@@ -43,4 +42,28 @@ color: #16222E;
 .continue-reading,.download {
     color: #BF8B4B;
 
+}
+
+@media only screen and (max-width:768px) {
+    .whitepaper-section {
+        height: 70vh;
+        align-items: center;
+    }
+    
+    
+    .whitepaper-heading {
+        font-size: 32px;
+        width: 100%;
+        padding-top: 40%;
+        
+    }
+
+    .whitepaper-p {
+        padding: 5% 0;
+        font-size: 16px;
+        text-align: center;
+        line-height: 25.6px;
+        width: 90%;
+        margin: auto;
+    }
 }

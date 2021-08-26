@@ -13,8 +13,9 @@ import Footer from "../../molecules/Footer/Footer";
 const Partners = () => {
 	return (
 		<div className="partners-section">
+			<Navbar />
 			<div className="partners">
-				<Navbar />
+				
 			</div>
 
 			<div className="partners-hero-section">

@@ -37,18 +37,6 @@ padding-top: 1.5em;
     /* top: 50%; */
 }
 
-.member-img:after{
-    position: absolute;
-    content: '';
-    /* background-image: url(../../../img/deborah.png) no-repeat cover; */
-    background-image: url("../../../img/deborah.png");
-
-	height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .member-pic {
     position: absolute;
     right: -50px;
@@ -179,4 +167,60 @@ letter-spacing: -0.045em;
 
 color: #0B0726;
 
+}
+
+@media only screen and (max-width:768px){
+    .team-heading {
+        font-size: 24px;
+    }
+
+    .team-member {
+        flex-direction: column;
+    }
+    .team-member-2 {
+        flex-direction: column-reverse;
+    }
+
+    .team-hero-section {
+        overflow: hidden;
+    }
+    
+
+    .member-img {
+        width: 100%;
+        margin-right: 30%;
+        height: 122px;
+    }
+
+     .member-img-2 {
+        width: 100%;
+        margin-left: 30%;
+        height: 122px;
+    }
+
+    .member-pic {
+        width: 40%;
+        top: -30%;
+        /* display: none; */
+        /* right: unset; */
+    }
+   .member-pic-2 {
+        width: 40%;
+        top: -15%;
+        /* left: 3%; */
+        /* display: none; */
+        /* right: unset; */
+    }
+
+    .data,.data-2 {
+        margin:0 5%;
+
+    }
+   
+    .about, .about-2 {
+        font-size: 16px;
+        line-height: 23.18px;
+    }
+
+    
 }

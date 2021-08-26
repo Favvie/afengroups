@@ -20,7 +20,6 @@ nav .sidebar {
 	position: fixed;
 	width: 20%;
 	height: 100%;
-	border-right: 2px;
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
@@ -34,17 +33,7 @@ nav .sidebar {
     z-index: -1;
 }
 
-.sidebar::-webkit-scrollbar {
-	/* display: none; */
 
-
-	/* z-index: -1; */
-}
-
-.sidebar::-webkit-scrollbar {
-	display: none;
-
-}
 
 nav .sidebar header h1 {
 	margin: 1em;
@@ -56,9 +45,7 @@ nav .sidebar header h1 {
 	width: 100%;
 }
 
-/* nav .sidebar ul li #intro {
-    border-top: 1px solid rgba(68, 62, 62,0.5);
-} */
+
 nav .sidebar ul li {
 	list-style: none;
 
@@ -208,19 +195,99 @@ header {
 
 }
 
-=======
-    padding: 2em;
-	padding-left: 2.2em;
-	margin: 0;
-	font-size: 22px;
-	line-height: 25px;
-	background-color: whitesmoke;
-}
 
 
-.actives, .accordion:hover {
+ .accordion:hover {
     background-color: #ccc;
-  }
+}
   
 
+table,
+td {
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+table {
+	margin-top: 2em;
+}
+tr {
+	padding: 0.5em;
+}
+
+  
+@media only screen and (max-width: 768px) {
+	nav .sidebar {
+		/* position: relative; */
+		width: 70%;
+		height: 100vh;
+		border-right: unset;
+		
+		/* display: none; */
+		/* overflow-y: unset; */
+		/* overflow: hidden; */
+	}
+
+	.navbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.activateds {
+		display: none;
+	}
+
+	nav .sidebar header h1 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	nav .sidebar ul {
+		/* border: 1px solid black; */
+		/* overflow-y: scroll; */
+		/* overflow: hidden; */
+		height: 17em;
+	}
+
+	#main-doc .main-section {
+		text-align: left;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#main-doc .main-section ul li {
+		margin-left: 2em;
+	}
+
+	.whitepaper-image {
+		width: 100%;
+	}
+
+	header {
+		font-size: 22px;
+	}
+
+	#main-doc .main-section p {
+		font-size: 16px;
+		line-height: 25.6px;
+		padding: unset;
+		width: 95%;
+		margin: auto;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	.whitepaper-btn {
+		color: white;
+		font-size: 27px;
+		top: 3%;
+		position: fixed;
+		left: 5%;
+		cursor: pointer;
+	}
+
+}
   

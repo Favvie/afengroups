@@ -9,65 +9,6 @@ import token from "../../../img/token.png";
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronDown } from "react-icons/go";
 
-
-
-const WhitepaperData = () => {
-	return (
-		<div>
-            <Navbar position={'sticky'} top={'0'}/>
-			<div className="whitepaper-doc-section">
-				<nav id="navbar">
-					<div class="sidebar">
-						<ul>
-							<li>
-								<a href="#overview" class="nav-link" id="intro">
-									Overview <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#real-estate" class="nav-link">
-									Real estate <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#arts" class="nav-link">
-									Arts <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#education" class="nav-link">
-									Education <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#blockchain" class="nav-link">
-									Blockchain: Revolutionizing the Market <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#afen" class="nav-link">
-									AFEN: The Ultimate Combination <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#afen_token" class="nav-link">
-									AFEN Token Utilities <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#afen_services" class="nav-link">
-									AFEN Services <GoChevronRight className='chveron-icon' />
-								</a>
-							</li>
-							<li>
-								<a href="#afen_team" class="nav-link">
-									AFEN Team <GoChevronRight className='chveron-icon'/>
-								</a>
-							</li>
-							<li>
-								<a href="#reference" class="nav-link">
-									Reference <GoChevronRight className='chveron-icon'/>
-
 const WhitepaperData = () => {
 	const [ toggle, setToggle ] = useState(false)
 	const [ toggle1, setToggle1 ] = useState(false)
@@ -78,6 +19,15 @@ const WhitepaperData = () => {
 		height: '90px',
 	}
 	
+	const active = {
+		color: '#BF8B4B',
+	}
+
+	const notActive = {
+		color: '#000',
+	}
+
+
 
 	return (
 		<div>
@@ -138,7 +88,7 @@ const WhitepaperData = () => {
 								</ul>
 							</li>
 							<li onClick={() => setToggle3(!toggle3)}>
-								<a href="#afen" className="nav-link">
+								<a href="#afen" className="nav-link" style={toggle3 ? active : notActive}>
 									AFEN: The Ultimate Combination{" "}
 									{ toggle3 ? <GoChevronDown  /> : <GoChevronRight  />}
 								</a>
@@ -173,10 +123,7 @@ const WhitepaperData = () => {
 							</li>
 							<li>
 								<a href="#reference" className="nav-link">
-
-									Reference <GoChevronRight className="chveron-icon" />
-					Reference <GoChevronRight  />
-
+									Reference <GoChevronRight  />
 								</a>
 								<div id="#reference" style={height}></div>
 							</li>
@@ -186,13 +133,8 @@ const WhitepaperData = () => {
 
 				<main id="main-doc">
 
-					<section class="main-section" id="overview">
-
-
 					<div id="overview" style={height}></div>
-
 					<section className="main-section" id="overview">
-
 						<header>
 							<h2>overview</h2>
 						</header>
@@ -223,13 +165,8 @@ const WhitepaperData = () => {
 					</section>
 
 
-					<section class="main-section" id="real-estate">
-
-
 					<div id="real-estate" style={height}></div>
-
 					<section className="main-section" id="real-estate">
-
 						<header>
 							<h2>real estate</h2>
 						</header>
@@ -272,14 +209,8 @@ const WhitepaperData = () => {
 						
 					</section>
 
-					<section class="main-section" id="arts">
-
-					<section className="main-section" id="arts">
-
-
 					<div id="art" style={height}></div>
 					<section className="main-section" id="art">
-
 						<header>
 							<h2>3. Arts</h2>
 						</header>
@@ -326,7 +257,7 @@ const WhitepaperData = () => {
 							massive expansion and technology drives unprecedented re-skilling
 							and up-skilling in developed economies.
 						</p>
-						<img src={education} alt="" />
+						<img className='whitepaper-image' src={education} alt="" />
 						<p>
 							The next decade will see an additional 350 million post-secondary
 							graduates and nearly 800 million more K12 graduates than today.
@@ -372,8 +303,8 @@ const WhitepaperData = () => {
 							for supply chain management applications integrated with the
 							blockchain technology will drive the overall blockchain market.
 						</p>
-						<img src={blockchainG} alt="" />
-						<img src={graph} alt="" />
+						<img className='whitepaper-image' src={blockchainG} alt="" />
+						<img className='whitepaper-image' src={graph} alt="" />
 
 						<div id="blockchains" style={height}></div>
 						<header>
@@ -709,145 +640,6 @@ const WhitepaperData = () => {
 						<img src={token} alt="" className="token" />
 
 						<table>
-
-							<tr>
-								<th>PARTICULARS</th>
-								<th>DESCRIPTION</th>
-							</tr>
-							<tr>
-								<td>Staking</td>
-								<td>
-									<ul>
-										<li>
-											Pool of tokens that pay rewards over time based on lockup
-											and interest.
-										</li>
-										<li>
-											Interest will scale based on a “lock-up” period that a
-											user can choose.
-										</li>
-										<li>
-											Instead of using a traditional savings type stake where
-											interest is earned based on the date of deposit, users can
-											stake tokens on a system that works more like a
-											certificate of deposit.
-										</li>
-										<li>
-											If they want to stake 6 months, they earn a percentage of
-											interest, but if they choose to stake for a year, they
-											earn more interest maybe something like a 20% bump from
-											the 6-month stake.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Cash Back on Transactions</td>
-								<td>
-									<ul>
-										<li>
-											For transactions using AFEN tokens on our platform and
-											partnering platforms, user can gain a small percentage of
-											tokens back at the end of a tracking period.
-										</li>
-										<li>
-											This will promote the spending of our tokens on different
-											marketplaces.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Art Marketplace | Discounted Transaction Fees:</td>
-								<td>
-									<ul>
-										<li>
-											Users can choose to pay transactions fees via AFEN token
-											on our marketplace for NFTs.
-										</li>
-										<li>
-											By doing this they can get a percentage discount on the
-											transaction fee.
-										</li>
-										<li>
-											This promotes spending like the cash back program would.
-										</li>
-										<li>
-											They can also pay in other cryptos for the full fee.
-										</li>
-										<li>
-											This will be specific to marketplaces hosted by AFEN.
-										</li>
-									</ul>
-								</td>
-							</tr>
-							<tr>
-								<td>AFEN Education Payments</td>
-								<td>
-									<ul>
-										<li>
-											If we allow educators to upload content to our platform.
-											We will pay them for every course completion that their
-											course holds.
-										</li>
-										<li>
-											This will be a very small fraction of tokens based on the
-											price of our tokens.
-										</li>
-										<li>
-											This will bring higher quality courses to our platform by
-											incentivizing content creators to get viewers.
-										</li>
-										<li>
-											{" "}
-											Over time and rise in price of our token we will
-											fractionalize the pay out to scale growth.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>AFEN Real Estate Payments</td>
-								<td>
-									<ul>
-										<li>
-											Users can choose to purchase property which is listed via
-											AFEN token and get a percentage discount on the
-											transaction fee.
-										</li>
-										<li>
-											Money is escrowed upon sale, and tax paid to the
-											government.
-										</li>
-										<li>
-											Ownership will then be transferred to the buyer upon
-											confirmation of all requirement
-										</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Referral Tokens | Transaction Fee Share</td>
-								<td>
-									<ul>
-										<li>If a user refers another user to our platform.</li>
-										<li>
-											They then will get a certain allocation of the
-											transactions fees we earn from any user that they
-											onboarded.
-										</li>
-										<li>
-											This will bring users onto our platform to earn AFEN
-											tokens.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
 							<thead>
 								<tr>
 									<th>PARTICULARS</th>
@@ -990,7 +782,6 @@ const WhitepaperData = () => {
 									</td>
 								</tr>
 							</tbody>
-
 						</table>
 					</section>
 					
@@ -1001,230 +792,6 @@ const WhitepaperData = () => {
 						</header>
 
 						<table>
-
-                            <tr><th colSpan='2'>AFEN & ART</th></tr>
-							
-							
-							<tr>
-								<td>Service Infrastructure</td>
-								<td>
-									<p>
-										The AFEN Art Marketplace will be the premier hub for minting
-										and trading verified African Art Pieces.
-									</p>
-									<p>Our Art listings will come in three forms:</p>
-									<ol>
-										<li>
-											<h4>Government Partnerships</h4>
-											<p>
-												Government backed listings will be artifacts and art
-												that is sponsored by the hosting government, certified
-												as a digital collectible of a sponsored item.
-											</p>
-										</li>
-										<li>
-											<h4>Individual Artist Listings</h4>
-											<p>
-												Our individual listings will be projects that are
-												curated by any artist willing to list Art pieces via the
-												AFEN platform. Those who mint art on our platform can
-												set the terms of royalties made on the secondary market
-												sales. Our market will be open for global customers to
-												buy and relist art pieces purchased on the AFEN
-												platform.
-											</p>
-										</li>
-										<li>
-											<h4>Individual African Artist Listings</h4>
-											<p>
-												Our individual African listings will be projects that
-												are curated by any verified African artists. Anyone on
-												the platform can purchase and resell art listings, but
-												only verified artists of Africa can mint pieces for
-												initial sale
-											</p>
-										</li>
-									</ol>
-									<p>
-										We will have an identity verification process for African
-										artists to submit to our team. Once verified they will
-										receive a badge showing their status and will become part of
-										our "African Artists Collective" where users can purchase
-										their minted pieces.
-									</p>
-								</td>
-							</tr>
-
-							<tr>
-								<td className='table-heading'>Example</td>
-								<td>
-									<ul>
-										<li>
-											An African artist completes KYC/AML and is listed as a
-											verified artist account.
-										</li>
-										<li>
-											They then mint their first NFT on the AFEN marketplace and
-											sell it for 500 AFEN tokens.
-										</li>
-										<li>
-											They pay a 10% transaction fee to the network as well as
-											the gas fee associated with the on-chain transfer.
-										</li>
-										<li>
-											They have the right to set a royalty charge on resale of
-											the item.
-										</li>
-										<li>
-											The buyer of this item then decides to re-list the NFT for
-											sale.
-										</li>
-										<li>
-											They will pay the transaction fee to the network as well
-											as the specified royalty by the seller.
-										</li>
-										<li>
-											This will continue throughout the lifecycle of the NFT.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr><th colSpan='2'>AFEN & EDUCATION</th></tr>
-							<tr>
-								<td>Service Infrastructure</td>
-								<td>
-									<p>
-										AFEN Education platform will be an open-source platform
-										where users can create course content for the education of
-										others.
-									</p>
-									<p>
-										We will begin by focusing on topics dealing with blockchain
-										and will be sold to good education and streaming Platform.
-									</p>
-									<p>
-										However, content creators will have the opportunity to
-										create content in any range of subjects they find to be
-										useful.
-									</p>
-									<p>
-										Some interesting course topics could be personal finance,
-										mathematics, tutorials on programming, and many other
-										subject matters.
-									</p>
-									<p>
-										We will incentivize content creators by paying them a very
-										small fraction of an AFEN token for each course completion.
-										Also if a user completes a course on our platform, they will
-										be awarded with digital certificate and AFEN tokens.
-									</p>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Example</td>
-								<td>
-									<ul>
-										<li>
-											A content creator uploads a course to our platform called
-											“Personal Finance: Building Your Net Worth”.
-										</li>
-										<li>Our users have access to this course for free.</li>
-										<li>
-											They will be able to rate the course and will have a
-											minimal amount of buffer adds prior to lessons beginning.
-										</li>
-										<li>
-											Once they pass the course and complete it. We will give
-											the content owner credit for a completion.
-										</li>
-									</ul>
-
-									<p>
-										If a creator wants to charge for their course because it has
-										premier content. We will partner and allow them to do so.
-									</p>
-
-									<p>
-										We will have the option of giving our users a certificate of
-										completion NFT that will verify their completion transcript
-										on our education platform.
-									</p>
-								</td>
-							</tr>
-							<tr><th colSpan='2'>AFEN & REAL ESTATE</th></tr>
-							<tr>
-								<td>Service Infrastructure</td>
-								<td>
-									<p>
-										AFEN real-estate program will allow for the peer-to-peer
-										sale and transfer of home ownership through smart contracts
-										that automate traditional home sales with a broker.
-									</p>
-									<p>
-										By using our platform users will be able to cut the
-										brokerage fee from a typical 10% down to our 1% facilitation
-										fee. On top of this we will create a system for paying taxes
-										partnered with the government for appropriate compliance
-										with government regulations.
-									</p>
-									<p>
-										Our goal is to accomplish a legitimized structure for
-										digital certificates of ownership for real-estate which is
-										recognized by the governing bodies we operate in. This
-										system will bring power to the users and give the ability
-										for eased international investment.
-									</p>
-									<h4>
-										Smart contract specifically designed to automate the process
-										of selling a real estate.
-									</h4>
-									<ol>
-										<li>Property is listed on a peer-to-peer network.</li>
-										<li>Property is bought by another user.</li>
-										<li>Money is escrowed upon sale.</li>
-										<li>
-											We set standard for how taxes are then delivered to the
-											government.
-										</li>
-										<li>
-											Through this we work through government partnership where
-											they verify real-estate tokens as a certificate of
-											ownership.
-										</li>
-										<li>
-											Confirmation of sale and pre-disposed arguments being met.
-											The ownership is then transferred to the buyer.
-										</li>
-									</ol>
-								</td>
-							</tr>
-							<tr>
-								<td>Example</td>
-								<td>
-									<ul>
-										<li>
-											Steve lists his house for 100 BNB or AFEN and Jim has
-											decided to buy it.
-										</li>
-										<li>
-											He will accept the contract and his payment will be sent
-											to an escrow wallet specified by the contract.
-										</li>
-										<li>
-											Our contract will then automate the process of selling the
-											house by Nigerian regulations and documents will be
-											verified.
-										</li>
-										<li>
-											After this process the ownership will transfer to Jim and
-											the BNB or AFEN will be sent to Steve.
-										</li>
-									</ul>
-								</td>
-							</tr>
-
 							<thead>
 								<tr>
 									<th colSpan="2">AFEN & ART</th>
@@ -1460,7 +1027,6 @@ const WhitepaperData = () => {
 									</td>
 								</tr>
 							</tbody>
-
 						</table>
 					</section>
 					
@@ -1468,14 +1034,8 @@ const WhitepaperData = () => {
 					<section className="main-section" id="afen_team">
 						<header>
 							<h2>
-
-								{" "}
-								10. About AFEN Team -{" "}
-								<Link to="/team">https://afengroup.com/team</Link>{" "}
-
 								10. About AFEN Team -
 								<Link to="/team">https://afengroup.com/team</Link>
-
 							</h2>
 						</header>
 					</section>
@@ -1486,17 +1046,10 @@ const WhitepaperData = () => {
 							<h2> 11. Reference</h2>
 						</header>
 
-
 						<p>
 							i GrandViewResearch, “Real Estate Market Size Worth $4,263.7
 							Billion By 2025” from
 							https://www.grandviewresearch.com/press-release/global-real-estate-market
-
-							ii Statista, “Art market worldwide - statistics & facts” from
-							https://www.statista.com/topics/1119/art-market/ iii Holon IQ,
-							“$10 Trillion Global Education Market in 2030” from
-							https://www.holoniq.com/2030/10-trillion-global-education-market/
-
 						</p>
 
 						<p>
@@ -1510,18 +1063,12 @@ const WhitepaperData = () => {
 						</p>
 
 						<p>
-
 							iv Markets and Markets, “Blockchain Market by Component (Platform
 							and Services), Provider (Application, Middleware, and
 							Infrastructure), Type (Private, Public, and Hybrid), Organization
 							Size, Application Area (BFSI, Government, IT & Telecom), and
 							Region - Global Forecast to 2025” from
 							https://www.marketsandmarkets.com/Market-Reports/blockchaintechnology-
-
-							market-90100890.html v Investopedia, “How Blockchain Technology is
-							Changing Real Estate” from
-							https://www.investopedia.com/news/how-blockchain-technology-changing-real-estate/
-
 							market-90100890.html
 						</p>
 
@@ -1531,7 +1078,6 @@ const WhitepaperData = () => {
 							https://www.investopedia.com/news/how-blockchain-technology-changing-real-estate/
 						</p>
 						<p>
-
 							vi Julius Baer, “Three ways blockchain is reshaping the art world”
 							from
 							https://www.juliusbaer.com/es/insights/digital-disruption/three-ways-blockchain-isreshaping-
@@ -1543,10 +1089,6 @@ const WhitepaperData = () => {
 					</section>
 				</main>
 			</div>
-
-			<Footer />
-
-
 		</div>
 	);
 };
