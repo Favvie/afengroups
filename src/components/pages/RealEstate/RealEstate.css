@@ -24,7 +24,7 @@
 	/* align-items: end; */
 }
 
-.right-col {
+.right-col-re {
 	display: flex;
 	flex-direction: column;
 	/* justify-content: flex-end; */
@@ -34,7 +34,7 @@
 	height: 63%;
 }
 
-.right-col h1 {
+.right-col-re h1 {
 	color: #ffe260;
 	font-weight: 500;
 	font-size: 28px;
@@ -43,7 +43,7 @@
 	padding: 0.5em 0;
 }
 
-.right-col p {
+.right-col-re p {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
@@ -162,10 +162,10 @@
 		font-size: 14px;
 	}
 
-	.right-col h1 {
+	.right-col-re h1 {
 		padding: 1% 0;
 	}
-	.right-col p {
+	.right-col-re p {
 		font-size: 18px;
 		width: 95%;
         margin: auto;
@@ -184,8 +184,8 @@
 		padding: unset;
 	}
 
-	.right-col {
-		padding-top: 40%;
+	.right-col-re {
+		padding-top: 90%;
 		text-align: center;
 		justify-content: center;
 	}

@@ -16,7 +16,7 @@ const Services = () => {
 					<h1 className="service-heading actives2">AFEN AND ART</h1>
 				</div>
 
-				<div className="right-col">
+				<div className="right-col-re">
 					<h1>AFEN AND REAL ESTATE</h1>
 					<p>
 						A peer-to-peer decentralized platform for the exchange of real

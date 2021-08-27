@@ -11,7 +11,7 @@ import Education from "./components/pages/Education/Education";
 import RealEstate from "./components/pages/RealEstate/RealEstate";
 import WhitepaperData from "./components/pages/WhitepaperData/WhitepaperData";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
-import useGetTokenDetails from "./hooks/useGetTokenDetails";
+import DashboardLogin from "./components/pages/DashboardLogin/DashboardLogin";
 
 function App() {
   return (
@@ -25,12 +25,12 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="/partners" exact component={Partners} />
           <Route path="/services" exact component={Services} />
-          <Route path="/services/" exact component={Services} />
           <Route path="/services/afen-education" exact component={Education} />
           <Route path="/services/real-estate" exact component={RealEstate} />
           <Route path="/whitepaper" exact component={Whitepaper} />
           <Route path="/whitepaperData" exact component={WhitepaperData} />
           <Route path="/dashboard" exact component={Dashboard} />
+          <Route path="/dashboardLogin" exact component={DashboardLogin} />
         </Switch>
       </Router>
     </>

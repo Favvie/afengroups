@@ -1,8 +1,9 @@
 import React from "react";
 import "./About.css";
 import Navbar from "../../molecules/Navbar/Navbar";
-// import Footer from "../../molecules/Footer/Footer";
+import Footer from "../../molecules/Footer/Footer";
 import roadmap from "../../../img/roadmap-img.png";
+import roadmap1 from "../../../img/roadmap-svg.svg";
 import piechart from "../../../img/piechart.png";
 import piechartData from "../../../img/piechart-data.png";
 const About = () => {
@@ -26,6 +27,7 @@ const About = () => {
 					<h1 className="roadmap">ROADMAP</h1>
 					<div className="roadmap-img">
 						<img src={roadmap} alt="" className='roadmap-image'/>
+						<img src={roadmap1} alt="" className='roadmap-image1'/>				
 					</div>
 					<div className="timeline1">
 						<h1>JULY 2021</h1>
@@ -76,7 +78,7 @@ const About = () => {
 				</div>
 			</div>
 
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 };

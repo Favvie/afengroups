@@ -9,7 +9,6 @@
 .afen-art {
 
 	background-image: url("../../../img/afen-art-bg.jpg");
-    background-image: url("../../../img/afen-art-bg.jpg");
 
 	height: 100vh;
 	background-position: center;
@@ -101,17 +100,17 @@
 	border-radius: 0 9px 9px 0;
 }
 
-
+/* 
 .headings{
-    /* position: absolute; */
-    /* transform: rotate(-90deg); */
-    /* top: 250px; */
-    /* left: 0;
-    padding: 0; */
-    /* margin-left: -100px; */
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 250px;
+    left: 0;
+    padding: 0;
+    margin-left: -100px;
    
 
-}
+} */
 
 
 .service-heading {
@@ -125,22 +124,16 @@
 	/* writing-mode: vertical-rl; */
 }
 
-/*
+
 .actives {
     font-size: 46px;
    
-=======
 
-<<<<<<< HEAD
+}
 .actives,
 .actived {
 	transform: rotate(180deg);
 	writing-mode: vertical-rl;
-=======
-.actives,.actived {
-	writing-mode: vertical-rl;	
->>>>>>> 1d9b2384b1ccd79e2fb3bcd1dec963b47f964760
->>>>>>> 711b7ea6c984a2026e8f0f75fdcff78ec7a4ddbe
 }
 
 .actives {
@@ -150,7 +143,7 @@
 	font-size: 36px;
 	opacity: 0.2;
 }
-*/
+
 .headings {
 	/* width: 130px; */
 	display: flex;
@@ -173,7 +166,7 @@
 	.services {
 		position: relative;
 	}
-
+/* 
 	.services::before {
 		position: absolute;
 		content: "";
@@ -182,12 +175,10 @@
 		width: 100%;
 		top: 0;
 		left: 0;
-		/* 	height: 100vh; */
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		/* margin-top: 50%; */
-	}
+	} */
 	.actives {
 		font-size: 18px;
 	}
@@ -216,7 +207,7 @@
 	}
 
 	.right-col {
-		padding-top: 30%;
+		padding-top: 90%;
 		text-align: center;
 		justify-content: center;
 	}

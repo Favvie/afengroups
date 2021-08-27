@@ -96,7 +96,7 @@ const Homepage = () => {
               <img src={priceGraph} alt="" />
               <div className="price">
                 <h4>Price</h4>
-                <p>${data?.price.toFixed(2) ?? ""}</p>
+                <p>${data?.price.toFixed(3) ?? ""}</p>
               </div>
             </div>
           </div>

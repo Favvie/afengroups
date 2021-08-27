@@ -52,6 +52,10 @@
 	margin: auto;
 }
 
+.roadmap-image1 {
+	display: none;
+}
+
 .tokenomics {
 	text-align: center;
 	font-style: normal;
@@ -175,7 +179,7 @@
 		padding: 5% 0;
 
 	}
-	.roadmap-img {
+	.roadmap-image {
 		display: none;
 	}
 
@@ -205,7 +209,7 @@
 
 	
 	.tokens {
-		padding-top: 220%;
+		padding-top: 10%;
 	}
 
 
@@ -226,6 +230,12 @@
 		width: 100%;
 		/* margin: auto; */
 		
+	}
+
+	.roadmap-image1 {
+		display: block;
+		width: 100%;
+	/* z-index: -1000; */
 	}
 
 	.pie,.pieData {
