@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "axios-hook": "^0.0.6",
+    "axios-hooks": "^2.6.3",
     "body-parser": "^1.19.0",
     "emailjs-com": "^3.2.0",
     "express": "^4.17.1",
