@@ -1,5 +1,5 @@
 import { axios } from "axios-hook";
-const url = "http://localhost:4000/data";
+const url = "https://coindata.afengroup.com/data";
 
 export const getTokenData = async () => {
   const { data, status } = await axios.get(url, {
