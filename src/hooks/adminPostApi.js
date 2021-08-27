@@ -10,6 +10,15 @@ const useAdminCred = () => {
     }
   );
 
+  const [{ ...newPostData }, newPost] = useAxios(
+    {
+      method: "post",
+      url: "/post/new_post",
+    },
+    {
+      manual: true,
+    }
+  );
   const initLogin = ({ email, password }) => {
     login({
       data: {
@@ -18,10 +27,16 @@ const useAdminCred = () => {
       },
     });
   };
-
+  const makeNewPost = (data) => {
+    newPost({
+      data,
+    });
+  };
   return {
     initLogin,
     loginData,
+    makeNewPost,
+    newPostData,
   };
 };
 
