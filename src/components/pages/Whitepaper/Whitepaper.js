@@ -2,6 +2,7 @@ import React from "react";
 import "./Whitepaper.css";
 import Navbar from "../../molecules/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import afendoc from '../../../document/afenwhitepaperdoc.pdf'
 
 const Whitepaper = () => {
 	return (
@@ -18,7 +19,7 @@ const Whitepaper = () => {
 				<Link to="/whitepaperData" className="continue-reading">
 					Continue reading
 				</Link>{" "}
-				or <Link className="download">Download</Link>.
+				or <Link className="download" to={afendoc} target='_blank' download='afenWhitepaper'>Download</Link>.
 			</p>
 		</div>
 	);
