@@ -23,7 +23,7 @@ const Services = () => {
 								<p>The digitization of contemporary and legacy African arts</p>
 								<p>An NFT marketplace where tokenized versions of legacy African arts will be bought and sold</p>
 								<p>Revolutionizing the African art sector by increasing the value of these arts and increasing inflow</p>
-								<Link className='learn'>Learn more</Link>
+								<Link className='learn' to='/whitepaperData#art'>Learn more</Link>
 							</div>
 							
 							<div className="button-group">

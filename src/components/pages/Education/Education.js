@@ -23,7 +23,7 @@ const Services = () => {
 						<p>Produce as many cryptocurrency experts as possible.</p>
 						<p>Courses in blockchain-related subjects and certification upon completion.</p>
 						<p>Awarded certificates will be transferred as NFTs</p>
-						<Link className='learn'>Learn more</Link>
+						<Link className='learn' to='/whitepaperData#education'>Learn more</Link>
 
 						<div className="button-group">
 							<Link className='btn nav-left' to='/services'><AiOutlineArrowLeft/></Link>

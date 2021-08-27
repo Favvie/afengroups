@@ -9,7 +9,7 @@
 .whitepaper-section {
     background-image: url("../../../img/whitepaper-bg.png");
 
-	height: 80vh;
+	height: 85vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,7 +30,7 @@ justify-content: center; */
 
 .whitepaper-p {
     padding: 20px 148px;
-    
+    padding-bottom: 0;
 font-weight: 500;
 font-size: 22px;
 line-height: 25px;

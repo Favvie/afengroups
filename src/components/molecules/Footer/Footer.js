@@ -62,7 +62,7 @@ function Footer(){
                     <Link to='https://twitter.com/Afenblockchain' className='twitter social'><FaTwitter/></Link>
                     <Link to='http://t.me/afenblockchain' className='telegram social'><FaTelegramPlane /></Link>
                     <Link to='https://instagram.com/afenblockchain' className='instagram social'><AiFillInstagram/></Link>
-                    <Link to='' className='linkedin social'><AiFillLinkedin/></Link>
+                    <Link to='https://www.linkedin.com/company/afen-blockchain-group' className='linkedin social'><AiFillLinkedin/></Link>
                     <Link to='https://www.reddit.com/r/AfenCommunity/' className='reddit social'><GrReddit/></Link>
                     
                 </div>

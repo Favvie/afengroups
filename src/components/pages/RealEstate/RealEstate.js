@@ -28,13 +28,13 @@ const Services = () => {
 						Validate documentation through immutability enabled by blockchain
 						technology.
 					</p>
-					<Link className="learn" to='/whitepaperData#art'>Learn more</Link>
+					<Link className="learn" to='/whitepaperData#real-estate'>Learn more</Link>
 
 					<div className="button-group">
-						<Link className="btn nav-left" to="/services/afen-education">
+						<Link className="btn nav-left" to="/services">
 							<AiOutlineArrowLeft />
 						</Link>
-						<Link className="btn nav-right" to="/services">
+						<Link className="btn nav-right" to="/services/afen-education">
 							<AiOutlineArrowRight />
 						</Link>
 					</div>
