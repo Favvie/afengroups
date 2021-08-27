@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import React from 'react';
 import './Contact.css'
 import Navbar from "../../molecules/Navbar/Navbar";
@@ -8,19 +8,19 @@ import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 import { GrReddit } from "react-icons/gr";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
-function sendEmail(e) {
-    e.preventDefault();
+// function sendEmail(e) {
+//     e.preventDefault();
 
-    emailjs.sendForm("service_ID",
-     "template_ID",
-     e.target,
-     "user_QwfDDJLvgPkPgc8Qab91D"
-     ).then(res=>{
-         console.log(res);
-     }).catch(err=> console.log(err));
-     window.location.reload();
-     e.target.reset();
-}
+//     emailjs.sendForm("service_ID",
+//      "template_ID",
+//      e.target,
+//      "user_QwfDDJLvgPkPgc8Qab91D"
+//      ).then(res=>{
+//          console.log(res);
+//      }).catch(err=> console.log(err));
+//      window.location.reload();
+//      e.target.reset();
+// }
 
 const Contact = () => {
 
@@ -33,7 +33,7 @@ const Contact = () => {
             <div className='form-container'>
                 <h3 className='sub-heading'>Send us a message</h3>
 
-                <form onSubmit={sendEmail}>
+                <form >
                     <input type="text" name="name" id="name" placeholder="Your Name"/>
                     <input type="email" name="email" id="email" placeholder="Your E-mail address" />
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>

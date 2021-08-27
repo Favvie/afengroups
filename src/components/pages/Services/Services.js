@@ -27,8 +27,8 @@ const Services = () => {
 							</div>
 							
 							<div className="button-group">
-								<button className='btn nav-left'><AiOutlineArrowLeft/></button>
-								<button className='btn nav-right'><AiOutlineArrowRight/></button>
+								<Link to='/services/afen-education' className='btn nav-left'><AiOutlineArrowLeft/></Link>
+								<Link to='/services/real-estate' className='btn nav-right'><AiOutlineArrowRight/></Link>
 							</div>
 						</div>
 

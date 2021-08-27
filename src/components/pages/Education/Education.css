@@ -54,7 +54,7 @@
 	position: relative;
 	/* margin-left: 5%; */
 }
-
+/* 
 .right-col-ed p:before {
 	position: absolute;
 	content: '';
@@ -65,7 +65,7 @@ opacity: 0.2;
 border-radius: 50%;
 margin:0 5%;
 
-}
+} */
 
 
 .learn {
@@ -192,7 +192,7 @@ margin:0 5%;
 	}
 
 	.right-col-ed {
-		padding-top: 35%;
+		padding-top: 90%;
 		text-align: center;
 		justify-content: center;
 	}

@@ -18,15 +18,15 @@ const Navbar = ({ backgroundColor, position, top, display }) => {
 		<div
 			className="nav-container"
 			style={{ backgroundColor, position, top, display }}
-		>
-			<NavLink to="/">
+		>	
+			<Link to="/">
 				<img className="logo" src={afenLogo} alt="" />
-			</NavLink>
+			</Link>
 			<FaBars onClick={showSidebar} className="hamburger" />
 
 			<ul
 				onClick={showSidebar}
-				className={sidebar ? "nav-links " : "nav-links activated"}
+				className={sidebar ? "nav-links activate" : "nav-links"}
 			>
 				<span className="close-icon">
 					<FaTimes onClick={() => setSidebar(!sidebar)} />
@@ -111,48 +111,5 @@ const Navbar = ({ backgroundColor, position, top, display }) => {
 		</div>
 	);
 };
-
-// const Nav = styled.div`
-// 	padding: 0 5%;
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-// 	flex-wrap: wrap;
-
-// 	@media (max-width: 768px) {
-// 		padding: 0;
-// 	}
-// `;
-// const Menu = styled.div`
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-
-// 	@media (max-width: 768px) {
-// 		overflow: hidden;
-// 		flex-direction: column;
-// 		width: 100%;
-// 		height: 100%;
-// 		justify-content: space-evenly;
-// 	}
-// `;
-// const Hamburger = styled.div`
-// 	display: none;
-// 	flex-direction: column;
-// 	cursor: pointer;
-// 	color: white;
-
-// 	span {
-// 		height: 1px;
-// 		width: 25px;
-// 		margin: 0 auto 4px auto;
-// 		border-radius: 5px;
-// 		background: white;
-// 	}
-
-// 	@media (max-width: 768px) {
-// 		display: flex;
-// 		padding-left: 30%;
-// 	}
 
 export default Navbar;

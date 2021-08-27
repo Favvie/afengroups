@@ -8,12 +8,14 @@ import graph from "../../../img/graph.png";
 import token from "../../../img/token.png";
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronDown } from "react-icons/go";
+import { FaBars } from "react-icons/fa";
 
 const WhitepaperData = () => {
 	const [ toggle, setToggle ] = useState(false)
 	const [ toggle1, setToggle1 ] = useState(false)
 	const [ toggle2, setToggle2 ] = useState(false)
 	const [ toggle3, setToggle3 ] = useState(false)
+	const [ sidebars, setSidebars ] = useState(false)
 
 	const height = {
 		height: '90px',
@@ -28,14 +30,16 @@ const WhitepaperData = () => {
 	}
 
 
+	const showSidebar = setSidebars(!sidebars);
 
 	return (
 		<div>
 			<Navbar position={"sticky"} top={"0"}/>
 			<div className="whitepaper-doc-section">
 				<nav id="navbar">
-					<div className="sidebar">
-						<ul>
+					<div className= {sidebars ? "sidebar activated": "sidebar"}>
+						<FaBars className='whitepaper-btn' />
+						<ul onClick={showSidebar}>
 							<li>
 								<a href="#overview" className="nav-link" id="intro">
 									Overview <GoChevronRight  />
