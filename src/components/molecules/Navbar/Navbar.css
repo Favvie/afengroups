@@ -33,6 +33,7 @@
 	align-items: center;
 	background: #16222e;
 	height: 62.48px;
+	width: 100%;
 }
 
 .contact-us {
@@ -65,7 +66,7 @@
 	}
 	.nav-links {
 		flex-direction: column;
-		width: 90%;
+		width: 100%;
 		height: 100vh;
 		background: white;
 		z-index: 1;

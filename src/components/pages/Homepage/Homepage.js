@@ -25,6 +25,7 @@ const Homepage = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+  
   return (
     <div className="home-container">
       <div className="container">

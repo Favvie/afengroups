@@ -15,7 +15,7 @@ const WhitepaperData = () => {
 	const [ toggle1, setToggle1 ] = useState(false)
 	const [ toggle2, setToggle2 ] = useState(false)
 	const [ toggle3, setToggle3 ] = useState(false)
-	const [ sidebars, setSidebars ] = useState(false)
+	// const [ sidebars, setSidebars ] = useState(false)
 
 	const height = {
 		height: '90px',
@@ -30,16 +30,16 @@ const WhitepaperData = () => {
 	}
 
 
-	const showSidebar = setSidebars(!sidebars);
+	// const showSidebar = setSidebars(!sidebars);
 
 	return (
 		<div>
-			<Navbar position={"sticky"} top={"0"}/>
+			<Navbar position={"fixed"} top={"0"}/>
 			<div className="whitepaper-doc-section">
 				<nav id="navbar">
-					<div className= {sidebars ? "sidebar activated": "sidebar"}>
+					<div className= {'sidebar'}>
 						<FaBars className='whitepaper-btn' />
-						<ul onClick={showSidebar}>
+						<ul>
 							<li>
 								<a href="#overview" className="nav-link" id="intro">
 									Overview <GoChevronRight  />
@@ -641,7 +641,7 @@ const WhitepaperData = () => {
 						<header>
 							<h2>7. AFEN Token Utilities</h2>
 						</header>
-						<img src={token} alt="" className="token" />
+						<img src={token} alt="" className="whitepaper-image" />
 
 						<table>
 							<thead>
