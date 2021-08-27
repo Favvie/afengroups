@@ -56,9 +56,19 @@ const Homepage = () => {
           Purchase $AFEN token from any of these outlets
         </h4>
         <ul className="sponsors">
-          <li className="sponsor">Bitmart</li>
-          <li className="sponsor">Julswap</li>
-          <li className="sponsor">Pancake Swap</li>
+          <li className="sponsor">
+            {" "}
+            <a href="https://coinmarketcap.com/currencies/afen-blockchain/">
+              CoinMarketCap
+            </a>
+          </li>
+          {/* <li className="sponsor">Julswap</li> */}
+          <li className="sponsor">
+            <a href="https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0xd0840d5f67206f865aee7cce075bd4484cd3cc81">
+              {" "}
+              Pancake Swap
+            </a>
+          </li>
         </ul>
 
         <div className="features-price">
@@ -70,12 +80,13 @@ const Homepage = () => {
               ut augue. Augue mollis pretium aliquet feugiat cursus. Eu pulvinar
               ultricies aliquam a scelerisque. Parturient et eget habitasse sed.
             </p>
-            <Link
+            <a
               style={decor}
-              to="http://www.afenmarketplace.com/"
+              target="__blank"
+              href="https://www.afenmarketplace.com/"
               className="buy-now">
               Buy Now
-            </Link>
+            </a>
           </div>
 
           <div className="price-graph">
@@ -170,12 +181,13 @@ const Homepage = () => {
               3 afro beings and a mythical creature: A man, a woman, a
               genderless child, and a masquerade.
             </p>
-            <Link
+            <a
               style={decor}
-              to="http://www.afenmarketplace.com/"
+              target="__blank"
+              href="https://www.afenmarketplace.com/"
               className="buy-now">
               Buy now
-            </Link>
+            </a>
           </div>
           <div className="afro-img">
             <img src={afroImg} alt="" className="afro-image" />
