@@ -7,7 +7,11 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+<<<<<<< HEAD
     "axios-hook": "^0.0.6",
+=======
+    "axios-hook": "0.0.6",
+>>>>>>> d15eb6662e5ec290a62429467c6e18eb6117a0cb
     "axios-hooks": "^2.6.3",
     "body-parser": "^1.19.0",
     "emailjs-com": "^3.2.0",

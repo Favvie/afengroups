@@ -9,31 +9,21 @@
 nav {
 	display: flex;
 	position: relative;
-
-    overflow-y: scroll;
-
-	/* overflow-y: scroll; */
-
 }
 
 nav .sidebar {
 	position: fixed;
+	margin-top: 64.48px;
 	width: 20%;
 	height: 100%;
 	background: #ffffff;
 	overflow-y: scroll;
 	border-right: 2px solid #0b0726;
-
-
 }
 
 .sidebar::-webkit-scrollbar {
 	display: none;
-
-    z-index: -1;
 }
-
-
 
 nav .sidebar header h1 {
 	margin: 1em;
@@ -41,33 +31,49 @@ nav .sidebar header h1 {
 	font-size: 1.4em;
 }
 
-.token {
-	width: 100%;
-}
-
-
 nav .sidebar ul li {
 	list-style: none;
-
-	margin: 0;
 }
 
-nav .sidebar ul li .nav-link , .accordion {
+nav .sidebar ul li .nav-link {
 	display: flex;
-	/* color: #636567; */
-	/* padding: 1em 0em 1em 1.2em; */
-	padding: 2em;
-	
+	padding: 10%;
 	margin: 0;
 	justify-content: space-between;
-
 	font-size: 22px;
 	line-height: 25px;
 	color: #000000;
 }
 
+nav .sidebar ul li .nav-link:hover {
+	background-color: #ccc;
+}
+
+.whitepaper-btn {
+	display: none;
+}
+
+.panelshow a {
+	color: #000000;
+	font-size: 0.8em;
+}
+.panelhide {
+	overflow: hidden;
+	display: none;
+}
+
+.panelshow {
+	overflow: hidden;
+	display: block;
+	padding: 2em;
+	padding-left: 2.2em;
+	margin: 0;
+	font-size: 22px;
+	line-height: 25px;
+	background-color: whitesmoke;
+}
+
 #main-doc .main-section {
-	/* margin-top: 1em; */
 	margin-left: 22%;
 	margin-right: 3em;
 	color: #515355;
@@ -78,7 +84,6 @@ nav .sidebar ul li .nav-link , .accordion {
 #main-doc .main-section h2 {
 	padding-bottom: 0.5em;
 	font-weight: 300;
-	/* font-size: 2em; */
 	color: black;
 	text-transform: capitalize;
 }
@@ -99,33 +104,50 @@ nav .sidebar ul li .nav-link , .accordion {
 #main-doc .main-section ol li {
 	margin-left: 3em;
 	padding: 0.3em;
-	/* list-style: disc; */
 	list-style-type: decimal;
 }
 
+table,
+td {
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+table {
+	margin-top: 2em;
+}
+tr {
+	padding: 0.5em;
+}
+
+.whitepaper-image {
+	width: 70%;
+}
+
 @media only screen and (max-width: 768px) {
+	.whitepaper-btn {
+		color: white;
+		font-size: 27px;
+		top: 3%;
+		position: fixed;
+		left: 5%;
+		cursor: pointer;
+		display: block;
+	}
+
 	nav .sidebar {
 		position: relative;
 		width: 100%;
-		/* overflow-y: unset; */
 		overflow: hidden;
 	}
 
-	nav .sidebar header h1 {
-		text-align: center;
+	#main-doc .main-section {
+		margin-left: unset;
 	}
 
-	nav .sidebar ul {
-		border: 1px solid black;
-		/* overflow-y: scroll; */
-
-		overflow: hidden;
-
-		/* overflow: hidden; */
-
-		height: 17em;
+	.sidebar::-webkit-scrollbar {
+		display: none;
 	}
-
 	#main-doc .main-section {
 		text-align: left;
 		margin-left: 1em;
@@ -134,31 +156,33 @@ nav .sidebar ul li .nav-link , .accordion {
 
 	#main-doc .main-section ul li {
 		margin-left: 2em;
+
+	}
+
+
+
+	/* nav .sidebar {
+		margin-top: 80px;
+	} */
+}
+/*
+	nav .sidebar header h1 {
+		text-align: center;
+	}
+
+	nav .sidebar ul {
+		border: 1px solid black;
+
+		overflow: hidden;
+
+
+		height: 17em;
+	}
+
+	
 	}
 }
 
-table,
-td {
-	border: 1px solid black;
-	padding: 0.5em;
-}
-
-table {
-	margin-top: 2em;
-}
-tr {
-	padding: 0.5em;
-}
-/* 
-table tr td ul li{
-    padding:.5em;
-    list-style: disc;
-}
-
-td ol li{
-    padding: 0;
-    list-style: disc;
-} */
 
 header {
 	font-weight: 500;
@@ -166,66 +190,18 @@ header {
 	line-height: 62px;
 }
 
-
-.subnav {
-	padding: 2em;
-	padding-left: 2.2em;
-
-	margin: 0;
-
-	font-size: 22px;
-	line-height: 25px;
-	background-color: whitesmoke;
-	/* display: none; */
-}
-
-
-.panelshow a {
-	color: #000000;
-	font-size: 0.8em;
-}
-.panelhide {
-    overflow: hidden;
-    display: none;
-}
-
-.panelshow {
-    overflow: hidden;
-    display: block;
-
-}
-
-
-
  .accordion:hover {
     background-color: #ccc;
 }
-  
 
-table,
-td {
-	border: 1px solid black;
-	padding: 0.5em;
-}
-
-table {
-	margin-top: 2em;
-}
-tr {
-	padding: 0.5em;
-}
-
-  
+ 
 @media only screen and (max-width: 768px) {
 	nav .sidebar {
-		/* position: relative; */
-		width: 70%;
+		position: relative;
+		width:100%;
 		height: 100vh;
 		border-right: unset;
 		
-		/* display: none; */
-		/* overflow-y: unset; */
-		/* overflow: hidden; */
 	}
 
 	.navbar {
@@ -233,6 +209,7 @@ tr {
 		top: 0;
 		left: 0;
 		z-index: 1;
+		height: 100%;
 	}
 	.activateds {
 		display: none;
@@ -244,10 +221,7 @@ tr {
 	}
 
 	nav .sidebar ul {
-		/* border: 1px solid black; */
-		/* overflow-y: scroll; */
-		/* overflow: hidden; */
-		height: 17em;
+		height: 1
 	}
 
 	#main-doc .main-section {
@@ -280,14 +254,6 @@ tr {
 		width: 100%;
 	}
 
-	.whitepaper-btn {
-		color: white;
-		font-size: 27px;
-		top: 3%;
-		position: fixed;
-		left: 5%;
-		cursor: pointer;
-	}
-
+	
 }
-  
+   */
