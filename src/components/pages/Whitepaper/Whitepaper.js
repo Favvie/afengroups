@@ -15,9 +15,9 @@ const Whitepaper = () => {
 			<p className="whitepaper-p">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae gravida
 				pulvinar egestas tortor. Eu ut morbi donec diam sed tincidunt. Netus
-				velit varius metus adipiscing diam.
+				velit varius metus adipiscing diam. <br />
 				<Link to="/whitepaperData" className="continue-reading">
-					Continue reading
+				Continue reading
 				</Link>{" "}
 				or <Link className="download" to={afendoc} target='_blank' download='afenWhitepaper'>Download</Link>.
 			</p>
