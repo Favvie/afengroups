@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .nav-links {
-	list-style: none;
-	display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-link {
@@ -23,9 +23,8 @@
 
 .nav-link:hover,
 .active {
-	color: #ffe260;
+  color: #ffe260;
 }
-
 
 .nav-container {
 	display: flex;
@@ -38,17 +37,17 @@
 }
 
 .contact-us {
-	font-family: "Ubuntu", sans-serif;
-	padding: 10px 35px;
-	border: 2px solid #ffe260;
-	border-radius: 9px;
-	color: #ffe260;
-	background: #0b0726;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 35px;
+  border: 2px solid #ffe260;
+  border-radius: 9px;
+  color: #ffe260;
+  background: #0b0726;
 }
 .right-icon,
 .hamburger,
 .close-icon {
-	display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
