@@ -8,14 +8,14 @@ import graph from "../../../img/graph.png";
 import token from "../../../img/token.png";
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronDown } from "react-icons/go";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const WhitepaperData = () => {
 	const [ toggle, setToggle ] = useState(false)
 	const [ toggle1, setToggle1 ] = useState(false)
 	const [ toggle2, setToggle2 ] = useState(false)
 	const [ toggle3, setToggle3 ] = useState(false)
-	// const [ sidebars, setSidebars ] = useState(false)
+	const [ sidebars, setSidebars ] = useState(false)
 
 	const height = {
 		height: '90px',
@@ -29,16 +29,16 @@ const WhitepaperData = () => {
 		color: '#000',
 	}
 
-
-	// const showSidebar = setSidebars(!sidebars);
-
 	return (
-		<div>
-			<Navbar position={"fixed"} top={"0"}/>
+		<div>			
+			<Navbar position={"sticky"} top={"0"}/>
 			<div className="whitepaper-doc-section">
-				<nav id="navbar">
-					<div className= {'sidebar'}>
-						<FaBars className='whitepaper-btn' />
+				<nav className="navbar">
+					<div className='whitepaper-btn' onClick={() => setSidebars(!sidebars)}>
+						{sidebars ? <FaTimes /> : <FaBars />}
+					</div>
+					<div className={sidebars ? 'sidebar ' : 'sidebar activating'} onClick={() => setSidebars(!sidebars)}>
+						
 						<ul>
 							<li>
 								<a href="#overview" className="nav-link" id="intro">
@@ -129,13 +129,13 @@ const WhitepaperData = () => {
 								<a href="#reference" className="nav-link">
 									Reference <GoChevronRight  />
 								</a>
-								<div id="#reference" style={height}></div>
+								{/* <div id="#reference" style={height}></div> */}
 							</li>
 						</ul>
 					</div>
 				</nav>
 
-				<main id="main-doc">
+				<main className="main-doc">
 
 					<div id="overview" style={height}></div>
 					<section className="main-section" id="overview">
