@@ -5,19 +5,19 @@ import { GoChevronDown } from "react-icons/go";
 export const SidebarData = [
     {
       title: 'Overview',
-      path: '/overview',
+      path: '#overview',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
     },
     {
       title: 'Real estate',
-      path: '/real-estate',
+      path: '#real-estate',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
     },
     {
       title: 'Arts',
-      path: '/arts',
+      path: '#art',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
 
@@ -25,7 +25,7 @@ export const SidebarData = [
       subNav: [
         {
           title: '3.1. Art in Africa',
-          path: '',
+          path: '#arts ',
           
         },
         
@@ -33,7 +33,7 @@ export const SidebarData = [
     },
     {
       title: 'Education',
-      path: '/education',
+      path: '#education',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
 
@@ -41,7 +41,7 @@ export const SidebarData = [
       subNav: [
         {
           title: '4.1 Education in Africa',
-          path: '',
+          path: '#educations',
           
         },
         
@@ -50,7 +50,7 @@ export const SidebarData = [
     
     {
       title: 'Blockchain: Revolutionizing The Market',
-      path: '/blockchain',
+      path: '#blockchain',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
 
@@ -58,18 +58,18 @@ export const SidebarData = [
       subNav: [
         {
           title: '5.1 Blockchain & Real Estate',
-          path: '',
+          path: '#blockchains',
           
         },
         {
           title: '5.2 Blockchain & Art',
-          path: '',
+          path: '#blockchainss',
           
         },
         
         {
           title: '5.3 Blockchain & Education',
-          path: '',
+          path: '#blockchainsss',
           
         },
         
@@ -78,7 +78,7 @@ export const SidebarData = [
 
     {
       title: '6. AFEN: The Ultimate Combination',
-      path: '/afen',
+      path: '#afen',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
 
@@ -86,18 +86,18 @@ export const SidebarData = [
       subNav: [
         {
           title: '6.1 AFEN & Real Estate',
-          path: '',
+          path: '#afens',
           
         },
         {
           title: '6.2. AFEN & Arts',
-          path: '',
+          path: '#afenss',
           
         },
         
         {
           title: '6.3. AFEN & Education',
-          path: '',
+          path: '#afensss',
           
         },
         
@@ -105,19 +105,19 @@ export const SidebarData = [
     },
     {
       title: 'AFEN Token Utilities',
-      path: '/token',
+      path: '#afen_token',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
     },
     {
       title: 'AFEN Services',
-      path: '/token',
+      path: '#afen_services',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
     },
     {
       title: 'AFEN Team',
-      path: '/team',
+      path: '#afen_team',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
     },
@@ -125,15 +125,11 @@ export const SidebarData = [
 
     {
       title: 'Reference',
-      path: '/reference',
+      path: '#reference',
       iconClosed: <GoChevronRight />,
       iconOpened: <GoChevronDown />,
 
     },
-    {
-      title: 'Support',
-      path: '/support',
-      icon: <IoIcons.IoMdHelpCircle />
-    }
+    
   ];
   
