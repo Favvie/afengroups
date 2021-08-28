@@ -6,6 +6,7 @@ import { useHistory } from "react-router";
 const Dashboard = () => {
   const [formData, setFormData] = useState({});
   const { initLogin, loginData } = useAdminCred();
+  const [errorShow, setError] = useState(loginData.error);
   const history = useHistory();
   const handleLogin = (e) => {
     e.preventDefault();
@@ -21,8 +22,17 @@ const Dashboard = () => {
         history.push("/dashboard");
       }, 1000);
     }
-    if (error) window.alert("invalid credential");
-  }, [loginData]);
+    if (error) {
+      setError(true);
+      setTimeout(() => {
+        setError(null);
+      }, 3000);
+    }
+  }, [loginData.data, loginData.error]);
+
+  // useEffect(() => {
+
+  // }, [errorShow]);
   return (
     <>
       <Navbar />
@@ -54,8 +64,18 @@ const Dashboard = () => {
             }
           />
 
-          <input type="submit" value="POST " id="loginBtn" />
+          <input type="submit" value="Login " id="loginBtn" />
         </form>
+        {errorShow && (
+          <p
+            style={{
+              textAlign: "center",
+              marginTop: 30,
+              color: "red",
+            }}>
+            Invalid Credentials
+          </p>
+        )}
       </div>
     </>
   );
