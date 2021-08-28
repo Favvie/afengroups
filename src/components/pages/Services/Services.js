@@ -1,5 +1,4 @@
 import React from "react";
-import WhitepaperData from "../WhitepaperData/WhitepaperData";
 import { Scrollchor } from "react-scrollchor";
 import "./Services.css";
 import Navbar from "../../molecules/Navbar/Navbar";
