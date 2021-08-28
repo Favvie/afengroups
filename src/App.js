@@ -13,6 +13,7 @@ import WhitepaperData from "./components/pages/WhitepaperData/WhitepaperData";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
 import DashboardLogin from "./components/pages/DashboardLogin/DashboardLogin";
 import ProtectedRoute from "./ProtectedRoute";
+import PageNotFound from "./components/pages/PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <ProtectedRoute component={Dashboard} exact path="/dashboard" />
           {/* <Route path="/dashboard" exact component={Dashboard} /> */}
           <Route path="/dashboardLogin" exact component={DashboardLogin} />
+          <Route component={PageNotFound} />
         </Switch>
       </Router>
     </>

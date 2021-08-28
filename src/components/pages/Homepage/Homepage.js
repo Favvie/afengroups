@@ -45,7 +45,7 @@ const Homepage = () => {
             facilitation of real estate investments, and Blockchain Education.
           </p>
 
-          <Link style={decor} to="/" className="learn-more">
+          <Link style={decor} to="/whitepaperData" className="learn-more">
             Learn More
           </Link>
         </div>
@@ -84,7 +84,7 @@ const Homepage = () => {
             <a
               style={decor}
               target="__blank"
-              href="https://www.afenmarketplace.com/"
+              href="https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0xd0840d5f67206f865aee7cce075bd4484cd3cc81"
               className="buy-now">
               Buy Now
             </a>

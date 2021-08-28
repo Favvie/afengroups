@@ -97,7 +97,6 @@ const Partners = () => {
 					</div>
 				</div>
 
-                <button className='load-more'>Load More</button>
 			</div>
             <Footer />
 		</div>
