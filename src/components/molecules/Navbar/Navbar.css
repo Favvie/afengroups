@@ -62,19 +62,19 @@
 		width: 80%;
 	}
 
-	.nav-container {
+	/* .nav-container {
 		overflow: hidden;
-	}
+	} */
 	.nav-links {
 		flex-direction: column;
 		width: 100%;
 		height: 100vh;
 		background: white;
-		z-index: 100;
+		z-index: 1000;
 		position: absolute;
 		top: 0;
 		right: 100%;
-		overflow: hidden;
+		/* overflow: hidden; */
 		/*transition: 850ms; */
 		/* display: none; */
 	}

@@ -3,13 +3,13 @@ import "./Dashboard.css";
 import Navbar from "../../molecules/Navbar/Navbar";
 import { FaCamera } from "react-icons/fa";
 import useMakeNewPost from "../../../hooks/useMakeNewMost";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 
 const Dashboard = () => {
   const { new_post, newPostData } = useMakeNewPost();
   const [formData, setFormData] = useState({});
   const cover = useRef(null);
-  const history = useHistory();
+  // const history = useHistory();
   const triggerFileInput = () => {
     cover.current.click();
   };
