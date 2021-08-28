@@ -185,6 +185,10 @@ tr {
   position: fixed;
 }
 
+.team-link {
+	font-size: 10px;
+	width: 80%;
+}
 	/*
 
 	 nav .sidebar {

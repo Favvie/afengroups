@@ -1039,7 +1039,7 @@ const WhitepaperData = () => {
 						<header>
 							<h2>
 								10. About AFEN Team -
-								<Link to="/team">https://afengroup.com/team</Link>
+								<Link to="/team" className='team_link'>https://afengroup.com/team</Link>
 							</h2>
 						</header>
 					</section>
