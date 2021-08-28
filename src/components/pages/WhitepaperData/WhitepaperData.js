@@ -8,7 +8,6 @@ import graph from "../../../img/graph.png";
 import token from "../../../img/token.png";
 import { GoChevronRight, GoChevronUp } from "react-icons/go";
 import { GoChevronDown } from "react-icons/go";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const WhitepaperData = () => {
 	const [toggle, setToggle] = useState(false);
@@ -16,12 +15,7 @@ const WhitepaperData = () => {
 	const [toggle2, setToggle2] = useState(false);
 	const [toggle3, setToggle3] = useState(false);
 	const [sidebars, setSidebars] = useState(false);
-	// const [sidebarss, setSidebarss] = useState();
-
-	const height = {
-		height: "90px",
-	};
-
+	
 	const active = {
 		color: "#BF8B4B",
 	};
@@ -41,11 +35,9 @@ const WhitepaperData = () => {
 						className="whitepaper-btn"
 						onClick={() => setSidebars(!sidebars)}
 					>
-						{/* {sidebars ? <FaTimes /> : <FaBars />} */}
 						<GoChevronUp />
 					</div>
 					<div
-						// className={sidebars ? "sidebar " : " closed"}
 						className= "sidebar" 
 						onClick={() => setSidebars(!sidebars)}
 					>
@@ -163,7 +155,6 @@ const WhitepaperData = () => {
 						className="whitepaper-btn"
 						onClick={() => setSidebars(!sidebars)}
 					>
-						{/* {sidebars ? <FaTimes /> : <FaBars />} */}
 						<GoChevronDown />
 					</div>
 					
@@ -172,7 +163,6 @@ const WhitepaperData = () => {
 				
 
 				<main className="main-doc">
-					{/* <div id="overview" style={height}></div> */}
 					<section className="main-section" id="overview">
 						<header>
 							<h2>overview</h2>
@@ -203,7 +193,6 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					{/* <div id="real-estate" style={height}></div> */}
 					<section className="main-section" id="real-estate">
 						<header>
 							<h2>real estate</h2>
@@ -246,7 +235,6 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					{/* <div id="art" style={height}></div> */}
 					<section className="main-section" id="art">
 						<header>
 							<h2>3. Arts</h2>
@@ -283,7 +271,6 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					{/* <div id="education" style={height}></div> */}
 					<section className="main-section" id="">
 						<header>
 							<h2>4. Education</h2>
@@ -327,7 +314,6 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					{/* <div id="blockchain" style={height}></div> */}
 					<section className="main-section" id="">
 						<header>
 							<h2>5. Blockchain: Revolutionizing the Market</h2>
@@ -545,7 +531,6 @@ const WhitepaperData = () => {
 						</ol>
 					</section>
 
-					{/* <div id="afen" style={height}></div> */}
 					<section className="main-section" id="afen">
 						<header>
 							<h2>6. AFEN: The Ultimate Combination</h2>
@@ -669,7 +654,6 @@ const WhitepaperData = () => {
 						</p>
 					</section>
 
-					{/* <div id="afen_token" style={height}></div> */}
 					<section className="main-section" id="afen_token">
 						<header>
 							<h2>7. AFEN Token Utilities</h2>
@@ -822,7 +806,6 @@ const WhitepaperData = () => {
 						</table>
 					</section>
 
-					{/* <div id="afen_services" style={height}></div> */}
 					<section className="main-section" id="afen_services">
 						<header>
 							<h2>8. AFEN Services</h2>
@@ -1067,7 +1050,6 @@ const WhitepaperData = () => {
 						</table>
 					</section>
 
-					{/* <div id="afen_team" style={height}></div> */}
 					<section className="main-section" id="afen_team">
 						<header>
 							<h2>
@@ -1079,7 +1061,6 @@ const WhitepaperData = () => {
 						</header>
 					</section>
 
-					{/* <div id="reference" style={height}></div> */}
 					<section className="main-section" id="reference">
 						<header>
 							<h2> 11. Reference</h2>
