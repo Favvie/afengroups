@@ -37,15 +37,15 @@ function Footer(){
                     <h3>Quick-links</h3>
                     <Link style={decor} to="/services" className='quick-link'>Services</Link>
                     <Link style={decor} to="/whitepaper" className='quick-link'>Whitepaper</Link>
-                    <Link style={decor} to="/roadmap" className='quick-link'>Roadmap</Link>
-                    <Link style={decor} to="/afenToken" className='quick-link'>Afen Token</Link>
+                    <Link style={decor} to="/about" className='quick-link'>Roadmap</Link>
+                    <Link style={decor} to="/about" className='quick-link'>Afen Token</Link>
                 </div>
                 <div className="go-to">
                     <h3>Go to</h3>
                     <Link style={decor} to="/team" className='go-to-link'>Teams</Link>
                     <Link style={decor} to="/partners" className='go-to-link'>Partners</Link>
                     <Link style={decor} to="/Contact" className='go-to-link'>Contact</Link>
-                    <Link style={decor} to="/tokenAllocation" className='go-to-link'>Token Allocation</Link>
+                    <Link style={decor} to="/about" className='go-to-link'>Token Allocation</Link>
                 </div>
             </div>
 

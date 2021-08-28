@@ -3,7 +3,7 @@ import "./About.css";
 import Navbar from "../../molecules/Navbar/Navbar";
 import Footer from "../../molecules/Footer/Footer";
 import roadmap from "../../../img/roadmap-img.png";
-import roadmap1 from "../../../img/roadmap-svg.svg";
+import roadmap1 from "../../../img/roadmap.svg";
 import piechart from "../../../img/piechart.png";
 import piechartData from "../../../img/piechart-data.png";
 const About = () => {

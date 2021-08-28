@@ -18,6 +18,7 @@
 	padding: 10px;
 	font-family: "Ubuntu", sans-serif;
 	color: #a6a6a6;
+	font-size: 18px;
 }
 
 .nav-link:hover,
@@ -32,7 +33,7 @@
 	padding: 0 80px;
 	align-items: center;
 	background: #16222e;
-	height: 62.48px;
+	height: 70px;
 	width: 100%;
 }
 
@@ -69,8 +70,8 @@
 		width: 100%;
 		height: 100vh;
 		background: white;
-		z-index: 1;
-		position: fixed;
+		z-index: 100;
+		position: absolute;
 		top: 0;
 		right: 100%;
 		overflow: hidden;
@@ -128,7 +129,7 @@
 	.hamburger {
 		color: white;
 		font-size: 27px;
-		top: 5%;
+		/* top: 5%; */
 		position: absolute;
 		right: 5%;
 		cursor: pointer;

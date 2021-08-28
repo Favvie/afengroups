@@ -14,14 +14,14 @@ const Dashboard = () => {
 					<label htmlFor="email" id="emailLabel">
 						Email
 					</label>
-					<input type="text" name="" id="email" />
+					<input type="text" name="" id="email" className='dashboardEmail'/>
 
 					<label htmlFor="password" id="passwordLabel">
 						password
 					</label>
 					<input type="password" name="" id="password" />
 					
-                    <input type="submit" value="POST " id='loginBtn' />
+                    <input type="submit" value="LOGIN " id='loginBtn' />
 				</form>
 			</div>
 		</>

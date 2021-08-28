@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.whitepaper-doc-section {
+	display: grid;
+	grid-template-columns:  20% 80%;
+	/* background-color: #000; */
+	height: calc(100vh - 70px);
+	/* background-color: #000; */
+}
+
+nav .sidebar {
+	margin-top: 0;
+	background: #ffffff;
+	overflow-y: scroll;
+	border-right: 2px solid #0b0726;
+}
+
+nav .sidebar ul li {
+	list-style: none;
+}
+
+nav .sidebar ul li .nav-link {
+	display: flex;
+	/* padding: 10%; */
+	/* margin: 0; */
+	/* justify-content: space-between; */
+	/* font-size: 22px; */
+	/* line-height: 25px; */
+	color: #000000;
+}
+/*
+nav .sidebar ul li .nav-link:hover {
+	background-color: #ccc;
+} */
+
+.navbar {
+	/* display: block; */
+	/* position: fixed; */
+	/* width: 20%; */
+	/* z-index: 1; Stay on top */
+	/* top: 7%; Stay at the top */
+	/* left: 0; */
+	overflow-x: hidden;
+	/* padding-top: 50px; */
+}
+
+
+
+.main-doc {
+	width: 80%;
+	/* padding-top: 60px; */
+	margin-left: 20%;
+}
+
+
+.sidebar::-webkit-scrollbar {
+	display: none;
+}
+
+
+.whitepaper-btn {
+	display: none;
+}
+
+.panelshow a {
+	color: #000000;
+	font-size: 0.8em;
+}
+.panelhide {
+	overflow: hidden;
+	display: none;
+}
+
+.panelshow {
+	overflow: hidden;
+	display: block;
+	padding: 2em;
+	padding-left: 2.2em;
+	margin: 0;
+	font-size: 22px;
+	line-height: 25px;
+	background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+	.whitepaper-doc-section {
+		overflow: hidden;
+	}
+	.main-doc .main-section {
+		margin-left: unset;
+	}
+	.main-doc .main-section p {
+		font-size: 16px;
+	}
+
+
+	.main-doc {
+		width: 80%;
+		padding-top: 60px;
+		margin-left: 10%;
+	}
+
+	.whitepaper-btn {
+		color: white;
+		font-size: 27px;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		background: red;
+		width: 100% ;
+		right: 0;
+		z-index: 1;
+	}
+
+	.closed {
+		display: none;
+	}
+
+	nav .sidebar ul li .nav-link {
+		font-size: 14px;
+		padding: 5%;
+	}
+
+	.navbar {
+		height: 100vh;
+		width: unset;
+		
+		left: 0;
+		overflow-x: hidden;
+		position: fixed;
+	}
+
+	.team_link {
+		font-size: 10px;
+		width: 80%;
+		display: none;	
+	}
+
+
+
+
+
+ 
+}
