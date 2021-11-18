@@ -1,90 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
 .container {
-  /* background: black url(../../../img/backgroundImage.jpg) no-repeat cover; */
-  /* height: 100vh; */
+	/* background: black url(../../../img/backgroundImage.jpg) no-repeat cover; */
+	/* height: 100vh; */
 
-  background-image: url("../../../img/backgroundImage.jpg");
+	background-image: url("../../../img/backgroundImage.jpg");
 
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Ubuntu", sans-serif;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Ubuntu", sans-serif;
 }
 
 .hero-section {
-  width: 45%;
-  padding: 80px;
-  padding-top: 5%;
+	width: 45%;
+	padding: 80px;
+	padding-top: 5%;
 }
 
 .company-name {
-  color: #ffe260;
-  padding: 11px 0;
-  opacity: 0.7;
+	color: #ffe260;
+	padding: 11px 0;
+	opacity: 0.7;
 }
 
 .hero-heading {
-  color: #fff;
-  opacity: 0.7;
-  padding-bottom: 1rem;
-  font-size: 36px;
+	color: #fff;
+	opacity: 0.7;
+	padding-bottom: 1rem;
+	font-size: 36px;
 }
 .hero-p {
-  color: #fff;
-  opacity: 0.7;
-  padding-bottom: 2rem;
-  line-height: 160%;
-  font-size: 18px;
+	color: #fff;
+	opacity: 0.7;
+	padding-bottom: 2rem;
+	line-height: 160%;
+	font-size: 18px;
 }
 
 .learn-more {
-  font-family: "Ubuntu", sans-serif;
-  padding: 10px 35px;
-  border: 2px solid #ffe260;
-  border-radius: 3px;
-  color: #ffe260;
-  /* margin-top: 100px; */
+	font-family: "Ubuntu", sans-serif;
+	padding: 10px 35px;
+	border: 2px solid #ffe260;
+	border-radius: 3px;
+	color: #ffe260;
+	/* margin-top: 100px; */
 }
+
+.learn-more:hover {
+	background-color: #ffe260;
+	color: white;
+}
+
 .features-section {
-  /* background-color: #fff; */
-  text-align: center;
+	/* background-color: #fff; */
+	text-align: center;
 }
 .afen_token {
-  color: #595959;
-  font-size: 28px;
-  padding: 54px 0 12px 0;
+	color: #595959;
+	font-size: 28px;
+	padding: 54px 0 12px 0;
 }
 
 .purchase {
-  color: #bf8b4b;
-  font-size: 28px;
-  opacity: 0.7;
+	color: #bf8b4b;
+	font-size: 28px;
+	opacity: 0.7;
 }
 .sponsors {
-  display: flex;
-  justify-content: center;
-  margin: 0 1em;
-  padding: 66px 0;
+	display: flex;
+	justify-content: center;
+	margin: 0 1em;
+	padding: 66px 0;
 }
 
 .sponsor a:hover {
-  background: #bf8b4b;
-  /* border: 1px solid black; */
-  padding: 20px 10px;
-  color: white;
-  border-radius: 14px;
-  margin-right: 48px;
+	background: #bf8b4b;
+	/* border: 1px solid black; */
+	padding: 20px 10px;
+	color: white;
+	border-radius: 14px;
+	margin-right: 48px;
 
-  /* height: 72px; */
+	/* height: 72px; */
 }
 
 /* .sponsor {
@@ -96,276 +102,307 @@
   color: #595959;
 } */
 .sponsor a {
-  background: rgb(166, 166, 166, 36%);
-  padding: 20px 10px;
-  margin-right: 48px;
-  border-radius: 14px;
-  width: 280px;
-  color: #595959;
-  display: block;
-  transition: 0.3s;
+	background: rgb(166, 166, 166, 36%);
+	padding: 20px 10px;
+	margin-right: 48px;
+	border-radius: 14px;
+	width: 280px;
+	color: #595959;
+	display: block;
+	transition: 0.3s;
 }
 
 .features-title {
-  color: #bf8b4b;
-  font-size: 36px;
+	color: #bf8b4b;
+	font-size: 36px;
 }
 
 .features-p {
-  font-size: 22px;
-  line-height: 28px;
-  color: #595959;
-  padding-bottom: 2rem;
+	font-size: 22px;
+	line-height: 28px;
+	color: #595959;
+	padding-bottom: 2rem;
 }
 
 .buy-now {
-  border: 1px solid #d2b12a;
-  color: #bf8b4b;
-  font-size: 16px;
-  padding: 10px 35px;
+	border: 1px solid #d2b12a;
+	color: #bf8b4b;
+	font-size: 16px;
+	padding: 10px 35px;
+}
+
+.buy-now:hover {
+	background-color: #d2b12a;
+	color: white;
 }
 
 .features-price {
-  display: flex;
-  justify-content: space-between;
-  /* margin: 0 80px; */
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 127px;
-  margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	/* margin: 0 80px; */
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 127px;
+	margin-bottom: 100px;
 }
 
 .features-text {
-  width: 45%;
-  text-align: left;
+	width: 45%;
+	text-align: left;
 }
 .price-graph {
-  position: relative;
-  width: 317px;
-  height: 340px;
-  background: rgba(22, 34, 46, 1);
+	position: relative;
+	width: 317px;
+	height: 340px;
+	background: rgba(22, 34, 46, 1);
 
-  border-radius: 14px;
-  margin-right: 100px;
-  /* overflow: hidden; */
+	border-radius: 14px;
+	margin-right: 100px;
+	/* overflow: hidden; */
 }
 
 .price-graph-top {
-  /* position: absolute; */
-  content: "Powered by CoinGecko";
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 12%;
-  background: #bf8b4b;
-  border-radius: 14px 14px 0 0;
-  padding-top: 10px;
-  color: white;
+	/* position: absolute; */
+	content: "Powered by CoinGecko";
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 12%;
+	background: #bf8b4b;
+	border-radius: 14px 14px 0 0;
+	padding-top: 10px;
+	color: white;
 }
 
 .price-graph-middle {
-  position: relative;
+	position: relative;
 }
 
 .priceName h4 {
-  color: #a6a6a6;
-  font-size: 22px;
+	color: #a6a6a6;
+	font-size: 22px;
 }
 .priceName p {
-  color: #d2b12a;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 100px;
+	color: #d2b12a;
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 100px;
 }
 
 .price h4 {
-  color: #a6a6a6;
-  font-size: 12px;
+	color: #a6a6a6;
+	font-size: 12px;
 }
 
 .price {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 .price p {
-  color: #ffe260;
-  font-size: 24px;
-  font-weight: 500;
+	color: #ffe260;
+	font-size: 24px;
+	font-weight: 500;
 }
 .pricelogo {
-  display: flex;
-  padding: 30px 40px 0 40px;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+	display: flex;
+	padding: 30px 40px 0 40px;
+	justify-content: space-between;
+	margin-bottom: 2rem;
 }
 .pricelogo img {
-  width: 20%;
-  height: 20%;
+	width: 20%;
+	height: 20%;
 }
 .price-graph:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 5%;
-  bottom: 0;
-  left: 0;
-  background: #bf8b4b;
-  border-radius: 0 0 14px 14px;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 5%;
+	bottom: 0;
+	left: 0;
+	background: #bf8b4b;
+	border-radius: 0 0 14px 14px;
 }
 
 .feature-list {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 3em;
-  margin: 0 50px;
+	display: grid;
+	/* grid-template-columns: auto auto auto; */
+	/* gap: 3em; */
+	/* margin: 0 50px; */
 }
+
 .feature {
-  border-top: 3px solid #d2b12a;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
-  padding: 2em;
+	border-top: 3px solid #d2b12a;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+	padding: 2em;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 1.5rem;
 }
 
 .afro-img {
-  margin-bottom: -120px;
+	margin-bottom: -120px;
 }
 
 .nft-afro-section {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-  margin: 5rem;
+	margin: 5rem;
 }
 
 .afro-text {
-  width: 45%;
-  text-align: left;
-  margin-top: 100px;
+	width: 45%;
+	text-align: left;
+	margin-top: 100px;
 }
 .afro-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 41px;
-  color: #bf8b4b;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 41px;
+	color: #bf8b4b;
 }
 
 .afro-p {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  color: #595959;
-  margin-bottom: 2rem;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: #595959;
+	margin-bottom: 2rem;
 }
 
+
 @media only screen and (max-width: 768px) {
-  .container {
-    background: #0b0726;
-  }
+	.container {
+		background: #0b0726;
+		height: 130vh;
+	}
 
-  .hero-section {
-    width: 100%;
-    padding-top: 25%;
-    text-align: center;
-    padding: 10%;
-    position: relative;
-    padding-top: 50%;
-  }
+	.hero-section {
+		width: 100%;
+		/* padding-top: 25%; */
+		text-align: center;
+		padding: 3.5%;
+		padding-bottom: 10%;
+		position: relative;
+		padding-top: 80%;
+	}
 
-  .hero-section:before {
-    position: absolute;
-    content: "";
-    background-image: url("../../../img/backgroundImage.jpg");
-    height: 40%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* 	height: 100vh; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* margin-top: 50%; */
-  }
+	.hero-section:before {
+		position: absolute;
+		content: "";
+		background-image: url("../../../img/backgroundImage.jpg");
+		height: 40%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		/* 	height: 100vh; */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* margin-top: 50%; */
+	}
 
-  .hero-heading {
-    font-size: 24px;
-  }
+	.hero-heading {
+		font-size: 24px;
+		width: unset;
+	}
 
-  .hero-p {
+	.hero-p {
+		font-size: 14px;
+	}
+
+	.afen_token {
+		font-size: 18px;
+	}
+
+	.purchase {
+		font-size: 16px;
+		padding: 0 3px;
+	}
+
+	.sponsors {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		column-gap: 10px;
+		padding: 30px 0;
+	}
+
+	.sponsor a {
+		margin: 10px 0;
+		width: 100%;
+		padding: 15px;
+	}
+	.sponsor a:hover {
+		margin-right: 0;
+	}
+
+	.features-price {
+		flex-direction: column;
+		justify-content: start;
+		margin: unset;
+	}
+
+	.features-text {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		/* padding: 5%; */
+		/* padding-top: unset; */
+	}
+
+	.features-title {
+		font-size: 28px;
+		padding-bottom: 8px;
+	}
+
+	.features-p {
+		font-size: 14px;
+		line-height: 126.9%;
+		width: 80%;
+		margin: auto;
+	}
+	.price-graph {
+		margin: auto;
+		margin-top: 10%;
+    margin-bottom: 94px;
+	}
+
+	.feature-list {
+		grid-template-columns: auto;
+		margin: 0 20px;
+	}
+
+	.nft-afro-section {
+		flex-direction: column-reverse;
+		margin: unset;
+		margin-bottom: 15%;
+	}
+
+	.afro-img {
+		margin: unset;
+		width: 100%;
+		margin-top: 10%;
+
+		/* height: 100%; */
+		/* object-fit: cover; */
+	}
+
+	.afro-image {
+		width: 95%;
+	}
+
+	.afro-text {
+		width: 90%;
+		font-size: 14px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.afro-title {
+		font-size: 22px;
+	}
+
+  .afro-p {
     font-size: 14px;
-  }
-
-  .afen_token {
-    font-size: 18px;
-  }
-
-  .purchase {
-    font-size: 16px;
-    padding: 0 3px;
-  }
-
-  .sponsors {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 10px;
-    padding: 30px 0;
-  }
-
-  .sponsor a {
-    margin: 10px 0;
-    width: 100%;
-    padding: 15px;
-  }
-  .sponsor a:hover {
-    margin-right: 0;
-  }
-
-  .features-price {
-    flex-direction: column;
-  }
-
-  .features-text {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    padding: 5%;
-  }
-
-  .price-graph {
-    margin: auto;
-    margin-top: 7%;
-  }
-
-  .feature-list {
-    grid-template-columns: auto;
-    margin: 0 20px;
-  }
-
-  .nft-afro-section {
-    flex-direction: column-reverse;
-    margin: unset;
-    margin-bottom: 15%;
-  }
-
-  .afro-img {
-    margin: unset;
-    width: 100%;
-    margin-top: 10%;
-
-    /* height: 100%; */
-    /* object-fit: cover; */
-  }
-
-  .afro-image {
-    width: 95%;
-  }
-
-  .afro-text {
-    width: 90%;
-    font-size: 14px;
-    text-align: center;
-
-    margin: auto;
-  }
-
-  .afro-title {
-    font-size: 22px;
   }
 }

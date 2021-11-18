@@ -6,43 +6,38 @@
 	padding: 0;
 }
 
-.afen-art {
-
+.service {
 	background-image: url("../../../img/afen-art-bg.jpg");
 
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .services {
-	height: 100vh;
+	height: 90vh;
 	position: relative;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
-
+	display: flex;
+	justify-content: space-between;
+	max-width: 1300px;
 }
 
 .right-col {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: flex-end; */
-	/* padding-right: 10%;*/
 	padding-top: 80px;
 	position: relative;
 
-	padding-top: 10%; 
-    position: relative;
+	padding-top: 10%;
+	position: relative;
 	height: 63%;
 }
 
 .right-col h1 {
 	color: #ffe260;
-	font-weight: 500;
 	font-size: 28px;
-	line-height: 32px;
 	letter-spacing: -0.035em;
 	padding: 0.5em 0;
 }
@@ -70,18 +65,11 @@
 }
 
 .button-group {
-
 	position: relative;
-	padding-top: 40%;
-	/* bottom: 80px; */
-	/* right: 0; */
-	/* padding-left: 50%;  */
-
-    /* position: absolute; */
-    padding-top: 40%;
-    padding-left: 50%;
-
+	padding-top: 10%;
+	padding-left: 50%;
 }
+
 .btn {
 	width: 74px;
 	padding: 12px 20px;
@@ -100,35 +88,16 @@
 	border-radius: 0 9px 9px 0;
 }
 
-/* 
-.headings{
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 250px;
-    left: 0;
-    padding: 0;
-    margin-left: -100px;
-   
-
-} */
-
-
 .service-heading {
 	font-weight: 500;
 	letter-spacing: -0.03em;
 	color: #ffe260;
 	opacity: 0.3;
-	/* padding-right: 2em; */
-
-	/* transform-origin: 0 0; */
-	/* writing-mode: vertical-rl; */
+	margin-left: 30px;
 }
 
-
 .actives {
-    font-size: 46px;
-   
-
+	font-size: 46px;	
 }
 .actives,
 .actived {
@@ -142,31 +111,31 @@
 .actived {
 	font-size: 36px;
 	opacity: 0.2;
+	margin-left: 50%;
 }
 
 .headings {
-	/* width: 130px; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
+	/*
 	.afen-art {
 		background: #0b0726;
-		/* padding-bottom: 100px; */
 		height: 120vh;
-
-
+		
+		
 	}
-
+	
 	.headings {
 		display: none;
 	}
 	.services {
 		position: relative;
 	}
-/* 
+	/* 
 	.services::before {
 		position: absolute;
 		content: "";
@@ -178,15 +147,15 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	} */
+	} 
 	.actives {
 		font-size: 18px;
 	}
-
+	
 	.actived {
 		font-size: 14px;
 	}
-
+	
 	.right-col p {
 		font-size: 18px;
 		width: 90%;
@@ -199,25 +168,27 @@
 		transform: unset;
 		padding-top: 4%;
 	}
-
+	
 	.services,
 	.headings {
 		flex-direction: column;
 		padding: unset;
 	}
-
+	
 	.right-col {
 		padding-top: 90%;
 		text-align: center;
 		justify-content: center;
 	}
-
+	
 	.button-group {
 		padding-top: 15%;
 	}
-
+	
 	.learn {
 		width: 70%;
 		margin: auto;
 	}
+	*/
 }
+

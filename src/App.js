@@ -7,8 +7,8 @@ import Contact from "./components/pages/Contact/Contact";
 import Blog from "./components/pages/Blog/Blog";
 import Team from "./components/pages/Team/Team";
 import About from "./components/pages/About/About";
-import Education from "./components/pages/Education/Education";
-import RealEstate from "./components/pages/RealEstate/RealEstate";
+// import Education from "./components/pages/Education/Education";
+// import RealEstate from "./components/pages/RealEstate/RealEstate";
 import WhitepaperData from "./components/pages/WhitepaperData/WhitepaperData";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
 import DashboardLogin from "./components/pages/DashboardLogin/DashboardLogin";
@@ -27,8 +27,8 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="/partners" exact component={Partners} />
           <Route path="/services" exact component={Services} />
-          <Route path="/services/afen-education" exact component={Education} />
-          <Route path="/services/real-estate" exact component={RealEstate} />
+          {/* <Route path="/services/afen-education" exact component={Education} /> */}
+          {/* <Route path="/services/real-estate" exact component={RealEstate} /> */}
           <Route path="/whitepaper" exact component={Whitepaper} />
           <Route path="/whitepaperData" exact component={WhitepaperData} />
           <ProtectedRoute component={Dashboard} exact path="/dashboard" />

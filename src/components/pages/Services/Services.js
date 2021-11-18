@@ -1,46 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 import { Scrollchor } from "react-scrollchor";
 import "./Services.css";
 import Navbar from "../../molecules/Navbar/Navbar";
 import Footer from "../../molecules/Footer/Footer";
-import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { ServicePageData } from "../../atoms/ServiceData";
 
 const Services = () => {
-	return <div className='service afen-art'>
-					<Navbar backgroundColor= {'transparent'}/>
-					<div className='services'>
-						<div className="headings">
-							<h1 className='service-heading actived'>AFEN AND REAL ESTATE</h1>
-							<h1 className='service-heading actives'>AFEN AND EDUCATION</h1>
-						</div>
-						
-						
+	const [current, setCurrent] = useState(0);
+	const length = ServicePageData.length;
 
-						<div className='right-col'>
-							<div>
-								<h1>AFEN AND ART</h1>
-								<p>The digitization of contemporary and legacy African arts</p>
-								<p>An NFT marketplace where tokenized versions of legacy African arts will be bought and sold</p>
-								<p>Revolutionizing the African art sector by increasing the value of these arts and increasing inflow</p>
-								{/* <Link className='learn' to='/whitepaperData#art'>Learn more</Link> */}
-								<Scrollchor className='learn' to='#art'>Learn more</Scrollchor>
-							</div>
-							
-							<div className="button-group">
-								<Link to='/services/afen-education' className='btn nav-left'><AiOutlineArrowLeft/></Link>
-								<Link to='/services/real-estate' className='btn nav-right'><AiOutlineArrowRight/></Link>
-							</div>
-						</div>
+	const prevSlide = () => {
+		setCurrent(current === length - 1 ? 0 : current + 1);
+	};
 
-				</div>
+	const nextSlide = () => {
+		setCurrent(current === 0 ? length - 1 : current - 1);
+	};
 
-				
-				<Footer />
+	return (
+		<div className="service afen-art">
+			<>
+				<Navbar backgroundColor={"transparent"} />
+				{ServicePageData.map((slide, index) => {
+					return (
+						<>
+							{index === current && (
+								<div key={index} className="services">
+									<div className="headings">
+										<h1 className="service-heading actived">
+											{slide.firstHeading}
+										</h1>
+										<h1 className="service-heading actives">
+											{slide.secondHeading}
+										</h1>
+									</div>
 
-				
-			</div>;
+									<div className="right-col">
+										<div>
+											<h1>{slide.rightColHeading}</h1>
+											<p>{slide.paragraphOne}</p>
+											<p>{slide.paragraphTwo}</p>
+											<p>{slide.paragraphThree}</p>
+											<p>{slide.paragraphFour}</p>
+											{/* <Link className='learn' to='/whitepaperData#art'>Learn more</Link> */}
+											<Scrollchor className="learn" to="#art">
+												Learn more
+											</Scrollchor>
+										</div>
+
+										<div className="button-group">
+											<span className="btn nav-left" onClick={prevSlide}>
+												<AiOutlineArrowLeft />
+											</span>
+											<span className="btn nav-right" onClick={nextSlide}>
+												<AiOutlineArrowRight />
+											</span>
+										</div>
+									</div>
+								</div>
+							)}
+						</>
+					);
+				})}
+			</>
+
+			<Footer />
+		</div>
+	);
 };
 
 export default Services;

@@ -14,7 +14,7 @@ import bukola from '../../../img/bukola.png'
 
 const Team = () => {
     return (
-        <>
+        <div className='main'>
             <Navbar />
 
             <div className="team-hero-section">
@@ -115,7 +115,7 @@ const Team = () => {
             </div>
             
             <Footer/>
-        </>
+        </div>
     )
 }
 
