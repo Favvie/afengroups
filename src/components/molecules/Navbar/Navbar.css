@@ -99,6 +99,9 @@
 		transition: width 850ms;
 	}
 
+	.active:before {
+		display: none;
+	}
 	.contact-us {
 		/* width: 100%; */
 		display: none;
